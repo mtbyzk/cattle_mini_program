@@ -1180,4 +1180,1681 @@ const data = {
 ]
 }
 
+  treatments: [
+  {
+    "id": "t01",
+    "disease_id": "d01",
+    "disease_name": "牛口蹄疫",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：抗感染+对症治疗",
+        "medications": [
+          {
+            "medication_id": "m05",
+            "medication_name": "头孢噻呋",
+            "dosage_per_kg": "5mg",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "控制继发感染"
+          },
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "退烧镇痛"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "板青颗粒",
+            "dosage": "100g拌料200斤",
+            "frequency": "持续",
+            "duration_days": 7,
+            "notes": "清热解毒"
+          }
+        ],
+        "notes": "口腔用0.1%高锰酸钾冲洗，蹄部用碘甘油涂抹。"
+      }
+    ],
+    "nursing_care": "保持圈舍干燥清洁，提供软质饲料和清洁饮水。",
+    "priority": 1
+  },
+  {
+    "id": "t02",
+    "disease_id": "d02",
+    "disease_name": "牛结核病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：无特效治疗",
+        "medications": [],
+        "oral_medications": [],
+        "notes": "结核病无特效治疗，发现后立即上报，扑杀无害化处理。"
+      }
+    ],
+    "nursing_care": "严格隔离，等待官方处理。",
+    "priority": 1
+  },
+  {
+    "id": "t03",
+    "disease_id": "d03",
+    "disease_name": "牛布氏杆菌病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：无特效治疗",
+        "medications": [],
+        "oral_medications": [],
+        "notes": "布氏杆菌病无特效治疗，发现后立即上报，扑杀无害化处理。"
+      }
+    ],
+    "nursing_care": "严格隔离，等待官方处理。",
+    "priority": 1
+  },
+  {
+    "id": "t04",
+    "disease_id": "d04",
+    "disease_name": "牛肺疫",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：泰乐菌素+氟尼辛",
+        "medications": [
+          {
+            "medication_id": "m54",
+            "medication_name": "泰乐菌素",
+            "dosage_per_kg": "10mg",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "控制支原体感染"
+          },
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "退烧抗炎"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "麻杏石甘散",
+            "dosage": "100g拌料200斤",
+            "frequency": "持续",
+            "duration_days": 7,
+            "notes": "止咳平喘"
+          }
+        ],
+        "notes": "泰乐菌素对支原体效果好。"
+      }
+    ],
+    "nursing_care": "改善通风，降低饲养密度。",
+    "priority": 1
+  },
+  {
+    "id": "t05",
+    "disease_id": "d05",
+    "disease_name": "牛流行热",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：对症治疗",
+        "medications": [
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "退烧镇痛"
+          },
+          {
+            "medication_id": "m16",
+            "medication_name": "维生素C",
+            "dosage_per_kg": "20mg",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "抗应激"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "板蓝根颗粒",
+            "dosage": "100g拌料200斤",
+            "frequency": "持续",
+            "duration_days": 5,
+            "notes": "清热解毒"
+          }
+        ],
+        "notes": "流行热无特效药，以对症治疗为主。"
+      }
+    ],
+    "nursing_care": "保持圈舍清洁，提供优质饮水。",
+    "priority": 2
+  },
+  {
+    "id": "t06",
+    "disease_id": "d06",
+    "disease_name": "牛病毒性腹泻",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：对症治疗",
+        "medications": [
+          {
+            "medication_id": "m05",
+            "medication_name": "头孢噻呋",
+            "dosage_per_kg": "5mg",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "控制继发感染"
+          },
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "退烧"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "蒙脱石散",
+            "dosage": "犊牛3-5g/头",
+            "frequency": "每日2次",
+            "duration_days": 3,
+            "notes": "止泻保护肠道"
+          },
+          {
+            "medication_name": "口服补液盐",
+            "dosage": "自由饮用",
+            "frequency": "持续",
+            "duration_days": 5,
+            "notes": "防止脱水"
+          }
+        ],
+        "notes": "BVD无特效药，以对症治疗为主。"
+      }
+    ],
+    "nursing_care": "隔离病牛，提供优质饲料。",
+    "priority": 2
+  },
+  {
+    "id": "t07",
+    "disease_id": "d07",
+    "disease_name": "牛传染性鼻气管炎",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：对症治疗",
+        "medications": [
+          {
+            "medication_id": "m05",
+            "medication_name": "头孢噻呋",
+            "dosage_per_kg": "5mg",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "控制继发感染"
+          },
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "退烧"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "板蓝根颗粒",
+            "dosage": "100g拌料200斤",
+            "frequency": "持续",
+            "duration_days": 7,
+            "notes": "清热解毒"
+          }
+        ],
+        "notes": "IBR无特效药，以对症治疗为主。"
+      }
+    ],
+    "nursing_care": "隔离病牛，改善通风。",
+    "priority": 2
+  },
+  {
+    "id": "t08",
+    "disease_id": "d08",
+    "disease_name": "牛巴氏杆菌病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：头孢+氟尼辛",
+        "medications": [
+          {
+            "medication_id": "m05",
+            "medication_name": "头孢噻呋",
+            "dosage_per_kg": "5mg",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "控制感染"
+          },
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "退烧抗炎"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "氟苯尼考粉",
+            "dosage": "100g拌料200斤",
+            "frequency": "持续",
+            "duration_days": 7,
+            "notes": "控制感染"
+          }
+        ],
+        "notes": "头孢+氟尼辛注射，配合氟苯尼考拌料。"
+      }
+    ],
+    "nursing_care": "改善通风，降低饲养密度。",
+    "priority": 1
+  },
+  {
+    "id": "t09",
+    "disease_id": "d09",
+    "disease_name": "犊牛大肠杆菌病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：庆大霉素+蒙脱石",
+        "medications": [
+          {
+            "medication_id": "m07",
+            "medication_name": "硫酸庆大霉素",
+            "dosage_per_kg": "2-3ml/头",
+            "frequency": "每日2次",
+            "duration_days": 3,
+            "route": "口服",
+            "notes": "口服，肠道杀菌"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "蒙脱石散",
+            "dosage": "犊牛1-2g/头",
+            "frequency": "每日2次",
+            "duration_days": 3,
+            "notes": "止泻保护肠道"
+          },
+          {
+            "medication_name": "口服补液盐",
+            "dosage": "自由饮用",
+            "frequency": "持续",
+            "duration_days": 5,
+            "notes": "防止脱水"
+          }
+        ],
+        "notes": "犊牛口服庆大霉素+蒙脱石+补液盐。"
+      }
+    ],
+    "nursing_care": "保温，保持干燥，及时清除粪便。",
+    "priority": 1
+  },
+  {
+    "id": "t10",
+    "disease_id": "d10",
+    "disease_name": "牛副结核病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：无特效治疗",
+        "medications": [],
+        "oral_medications": [],
+        "notes": "副结核病无特效治疗，发现后立即上报，扑杀无害化处理。"
+      }
+    ],
+    "nursing_care": "严格隔离，等待官方处理。",
+    "priority": 1
+  },
+  {
+    "id": "t11",
+    "disease_id": "d11",
+    "disease_name": "牛炭疽",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：无特效治疗",
+        "medications": [],
+        "oral_medications": [],
+        "notes": "炭疽无特效治疗，发现后立即上报，扑杀无害化处理。严禁解剖。"
+      }
+    ],
+    "nursing_care": "严格隔离，等待官方处理。严禁解剖。",
+    "priority": 1
+  },
+  {
+    "id": "t12",
+    "disease_id": "d12",
+    "disease_name": "牛气肿疽",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：青霉素+氟尼辛",
+        "medications": [
+          {
+            "medication_id": "m01",
+            "medication_name": "青霉素钾/钠",
+            "dosage_per_kg": "6-8万单位",
+            "frequency": "每日2-3次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "首选药物"
+          },
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "退烧镇痛"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "青霉素是首选药物，早期治疗效果好。"
+      }
+    ],
+    "nursing_care": "隔离病牛，保持圈舍清洁。",
+    "priority": 1
+  },
+  {
+    "id": "t13",
+    "disease_id": "d13",
+    "disease_name": "牛恶性水肿",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：青霉素+清创",
+        "medications": [
+          {
+            "medication_id": "m01",
+            "medication_name": "青霉素钾/钠",
+            "dosage_per_kg": "6-8万单位",
+            "frequency": "每日2-3次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "对厌氧菌效果好"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "青霉素注射+双氧水清创。"
+      }
+    ],
+    "nursing_care": "保持环境干燥，减少外伤。",
+    "priority": 1
+  },
+  {
+    "id": "t14",
+    "disease_id": "d14",
+    "disease_name": "牛破伤风",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：破伤风抗毒素+镇静",
+        "medications": [
+          {
+            "medication_id": "m01",
+            "medication_name": "青霉素钾/钠",
+            "dosage_per_kg": "6-8万单位",
+            "frequency": "每日2-3次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "预防感染"
+          },
+          {
+            "medication_id": "m50",
+            "medication_name": "氯丙嗪",
+            "dosage_per_kg": "1-2mg",
+            "frequency": "每日2次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "镇静"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "破伤风抗毒素+青霉素+镇静。"
+      }
+    ],
+    "nursing_care": "保持安静环境，避免刺激。",
+    "priority": 1
+  },
+  {
+    "id": "t15",
+    "disease_id": "d15",
+    "disease_name": "牛狂犬病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：无特效治疗",
+        "medications": [],
+        "oral_medications": [],
+        "notes": "狂犬病无特效治疗，发现后立即上报，扑杀无害化处理。"
+      }
+    ],
+    "nursing_care": "严格隔离，等待官方处理。",
+    "priority": 1
+  },
+  {
+    "id": "t16",
+    "disease_id": "d16",
+    "disease_name": "牛传染性角膜结膜炎",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：局部治疗",
+        "medications": [],
+        "oral_medications": [],
+        "notes": "用生理盐水清洗患眼，涂抹抗生素眼膏。"
+      }
+    ],
+    "nursing_care": "保持圈舍清洁，避免强光刺激。",
+    "priority": 2
+  },
+  {
+    "id": "t17",
+    "disease_id": "d17",
+    "disease_name": "牛放线菌病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：碘化钾+青霉素",
+        "medications": [
+          {
+            "medication_id": "m01",
+            "medication_name": "青霉素钾/钠",
+            "dosage_per_kg": "6-8万单位",
+            "frequency": "每日2-3次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "控制感染"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "碘化钾",
+            "dosage": "5-10g/头",
+            "frequency": "每日1次",
+            "duration_days": 14,
+            "notes": "口服碘化钾"
+          }
+        ],
+        "notes": "青霉素注射+碘化钾口服。"
+      }
+    ],
+    "nursing_care": "保持圈舍清洁，减少外伤。",
+    "priority": 2
+  },
+  {
+    "id": "t18",
+    "disease_id": "d18",
+    "disease_name": "牛衣原体病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：四环素类",
+        "medications": [
+          {
+            "medication_id": "m39",
+            "medication_name": "多西环素",
+            "dosage_per_kg": "拌料",
+            "frequency": "持续",
+            "duration_days": 7,
+            "route": "拌料",
+            "notes": "对衣原体效果好"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "多西环素对衣原体效果好。"
+      }
+    ],
+    "nursing_care": "隔离病牛，改善饲养管理。",
+    "priority": 2
+  },
+  {
+    "id": "t19",
+    "disease_id": "d19",
+    "disease_name": "牛球虫病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：磺胺类",
+        "medications": [
+          {
+            "medication_id": "m42",
+            "medication_name": "磺胺间甲氧嘧啶",
+            "dosage_per_kg": "0.1ml",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "对球虫效果好"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "磺胺间甲氧嘧啶对球虫效果好。"
+      }
+    ],
+    "nursing_care": "保持圈舍清洁，及时清除粪便。",
+    "priority": 2
+  },
+  {
+    "id": "t20",
+    "disease_id": "d20",
+    "disease_name": "牛肝片吸虫病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：阿苯达唑",
+        "medications": [],
+        "oral_medications": [
+          {
+            "medication_name": "阿苯达唑",
+            "dosage": "5-10mg/kg体重",
+            "frequency": "单次",
+            "duration_days": 1,
+            "notes": "广谱驱虫药，对肝片吸虫效果好"
+          }
+        ],
+        "notes": "阿苯达唑口服，单次给药。"
+      }
+    ],
+    "nursing_care": "定期驱虫，避免在低洼潮湿地区放牧。",
+    "priority": 2
+  },
+  {
+    "id": "t21",
+    "disease_id": "d21",
+    "disease_name": "牛绦虫病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：阿苯达唑",
+        "medications": [],
+        "oral_medications": [
+          {
+            "medication_name": "阿苯达唑",
+            "dosage": "5-10mg/kg体重",
+            "frequency": "单次",
+            "duration_days": 1,
+            "notes": "广谱驱虫药，对绦虫效果好"
+          }
+        ],
+        "notes": "阿苯达唑口服，单次给药。"
+      }
+    ],
+    "nursing_care": "定期驱虫，保持环境卫生。",
+    "priority": 3
+  },
+  {
+    "id": "t22",
+    "disease_id": "d22",
+    "disease_name": "牛螨病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：伊维菌素+外用",
+        "medications": [
+          {
+            "medication_id": "m20",
+            "medication_name": "伊维菌素",
+            "dosage_per_kg": "0.2mg",
+            "frequency": "间隔7-10天重复",
+            "duration_days": 2,
+            "route": "皮下注射",
+            "notes": "驱螨虫"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "伊维菌素注射+双甲脒外用，间隔7-10天重复一次。"
+      }
+    ],
+    "nursing_care": "保持圈舍干燥，定期消毒。",
+    "priority": 3
+  },
+  {
+    "id": "t23",
+    "disease_id": "d23",
+    "disease_name": "牛前胃弛缓",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：健胃+益生菌",
+        "medications": [],
+        "oral_medications": [
+          {
+            "medication_name": "人工盐",
+            "dosage": "200-400g/头",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "notes": "健胃通便"
+          },
+          {
+            "medication_name": "乳酶生",
+            "dosage": "5-10g/头",
+            "frequency": "每日2次",
+            "duration_days": 5,
+            "notes": "调节肠道菌群"
+          }
+        ],
+        "notes": "人工盐健胃+乳酶生调节菌群。"
+      }
+    ],
+    "nursing_care": "改善饲养管理，提供易消化饲料。",
+    "priority": 3
+  },
+  {
+    "id": "t24",
+    "disease_id": "d24",
+    "disease_name": "牛瘤胃臌气",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：紧急排气",
+        "medications": [],
+        "oral_medications": [
+          {
+            "medication_name": "二甲硅油",
+            "dosage": "5-10g/头",
+            "frequency": "单次",
+            "duration_days": 1,
+            "notes": "消泡剂"
+          }
+        ],
+        "notes": "紧急穿刺排气，二甲硅油消泡。"
+      }
+    ],
+    "nursing_care": "避免采食易发酵饲料。",
+    "priority": 1
+  },
+  {
+    "id": "t25",
+    "disease_id": "d25",
+    "disease_name": "牛瘤胃酸中毒",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：碳酸氢钠+补液",
+        "medications": [
+          {
+            "medication_id": "m24",
+            "medication_name": "葡萄糖",
+            "dosage_per_kg": "10-20ml/kg",
+            "frequency": "单次",
+            "duration_days": 1,
+            "route": "静脉注射",
+            "notes": "补充能量"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "碳酸氢钠",
+            "dosage": "20-50g/头",
+            "frequency": "每日2次",
+            "duration_days": 3,
+            "notes": "中和胃酸"
+          }
+        ],
+        "notes": "碳酸氢钠中和胃酸+葡萄糖补液。"
+      }
+    ],
+    "nursing_care": "避免采食过多精料。",
+    "priority": 1
+  },
+  {
+    "id": "t26",
+    "disease_id": "d26",
+    "disease_name": "牛酮病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：葡萄糖+丙二醇",
+        "medications": [
+          {
+            "medication_id": "m24",
+            "medication_name": "葡萄糖",
+            "dosage_per_kg": "10-20ml/kg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "静脉注射",
+            "notes": "补充血糖"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "丙二醇",
+            "dosage": "200-300ml/头",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "notes": "补充能量"
+          }
+        ],
+        "notes": "葡萄糖静脉注射+丙二醇口服。"
+      }
+    ],
+    "nursing_care": "调整饲料配方，增加能量摄入。",
+    "priority": 2
+  },
+  {
+    "id": "t27",
+    "disease_id": "d27",
+    "disease_name": "牛生产瘫痪",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：补钙",
+        "medications": [
+          {
+            "medication_id": "m69",
+            "medication_name": "氯化钙",
+            "dosage_per_kg": "5-10g/头",
+            "frequency": "单次",
+            "duration_days": 1,
+            "route": "静脉注射",
+            "notes": "补钙"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "氯化钙静脉注射补钙。"
+      }
+    ],
+    "nursing_care": "产后及时补钙，预防低血钙。",
+    "priority": 1
+  },
+  {
+    "id": "t28",
+    "disease_id": "d28",
+    "disease_name": "牛子宫内膜炎",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：头孢+宫炎净灌注",
+        "medications": [
+          {
+            "medication_id": "m05",
+            "medication_name": "头孢噻呋",
+            "dosage_per_kg": "5mg",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "控制感染"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "头孢注射，宫炎净子宫灌注。"
+      }
+    ],
+    "nursing_care": "做好产房消毒，产后消炎。",
+    "priority": 2
+  },
+  {
+    "id": "t29",
+    "disease_id": "d29",
+    "disease_name": "牛乳房炎",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：头孢+鱼石脂外敷",
+        "medications": [
+          {
+            "medication_id": "m05",
+            "medication_name": "头孢噻呋",
+            "dosage_per_kg": "5mg",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "控制感染"
+          },
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "消炎镇痛"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "头孢+氟尼辛注射，鱼石脂软膏外敷消炎。"
+      }
+    ],
+    "nursing_care": "保持牛舍清洁，做好乳房护理。",
+    "priority": 2
+  },
+  {
+    "id": "t30",
+    "disease_id": "d30",
+    "disease_name": "牛胎衣不下",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：缩宫素+抗生素",
+        "medications": [
+          {
+            "medication_id": "m56",
+            "medication_name": "缩宫素",
+            "dosage_per_kg": "20-50单位/头",
+            "frequency": "每2小时1次，最多3次",
+            "duration_days": 1,
+            "route": "肌肉注射",
+            "notes": "促进子宫收缩，排出胎衣"
+          },
+          {
+            "medication_id": "m05",
+            "medication_name": "头孢噻呋",
+            "dosage_per_kg": "5mg",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "预防感染"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "缩宫素促进子宫收缩排出胎衣，头孢预防感染。"
+      }
+    ],
+    "nursing_care": "加强妊娠期饲养管理，避免难产。",
+    "priority": 2
+  },
+  {
+    "id": "t31",
+    "disease_id": "d31",
+    "disease_name": "牛难产",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：缩宫素助产",
+        "medications": [
+          {
+            "medication_id": "m56",
+            "medication_name": "缩宫素",
+            "dosage_per_kg": "20-50单位/头",
+            "frequency": "每30分钟1次，最多3次",
+            "duration_days": 1,
+            "route": "肌肉注射",
+            "notes": "促进子宫收缩"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "缩宫素助产，无效则人工助产或剖腹产。"
+      }
+    ],
+    "nursing_care": "加强妊娠期饲养管理，避免母牛过肥或过瘦。",
+    "priority": 1
+  },
+  {
+    "id": "t32",
+    "disease_id": "d32",
+    "disease_name": "牛维生素A缺乏症",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：维生素AD",
+        "medications": [
+          {
+            "medication_id": "m22",
+            "medication_name": "维生素AD注射液",
+            "dosage_per_kg": "2-4ml/头",
+            "frequency": "单次",
+            "duration_days": 1,
+            "route": "肌肉注射",
+            "notes": "补充维生素A和D"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "维生素AD注射+鱼肝油口服。"
+      }
+    ],
+    "nursing_care": "补充青绿饲料，改善饲养管理。",
+    "priority": 3
+  },
+  {
+    "id": "t33",
+    "disease_id": "d33",
+    "disease_name": "牛白肌病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：亚硒酸钠维生素E",
+        "medications": [
+          {
+            "medication_id": "m23",
+            "medication_name": "亚硒酸钠维生素E",
+            "dosage_per_kg": "2-4ml/头",
+            "frequency": "单次",
+            "duration_days": 1,
+            "route": "肌肉注射",
+            "notes": "补硒和维生素E"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "亚硒酸钠维生素E注射，饲料中添加亚硒酸钠预防。"
+      }
+    ],
+    "nursing_care": "饲料中添加亚硒酸钠，补充维生素E。",
+    "priority": 3
+  },
+  {
+    "id": "t34",
+    "disease_id": "d34",
+    "disease_name": "牛佝偻病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：补钙+维生素D",
+        "medications": [
+          {
+            "medication_id": "m22",
+            "medication_name": "维生素AD注射液",
+            "dosage_per_kg": "2-4ml/头",
+            "frequency": "单次",
+            "duration_days": 1,
+            "route": "肌肉注射",
+            "notes": "补充维生素D"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "碳酸钙",
+            "dosage": "10-20g/头",
+            "frequency": "每日1次",
+            "duration_days": 14,
+            "notes": "补钙"
+          }
+        ],
+        "notes": "维生素D注射+碳酸钙口服。"
+      }
+    ],
+    "nursing_care": "补充钙磷，增加光照。",
+    "priority": 3
+  },
+  {
+    "id": "t35",
+    "disease_id": "d35",
+    "disease_name": "牛异食癖",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：补充营养",
+        "medications": [],
+        "oral_medications": [
+          {
+            "medication_name": "电解多维",
+            "dosage": "500g拌料1000斤",
+            "frequency": "持续",
+            "duration_days": 14,
+            "notes": "补充维生素和矿物质"
+          },
+          {
+            "medication_name": "微量元素添加剂",
+            "dosage": "按说明使用",
+            "frequency": "持续",
+            "duration_days": 14,
+            "notes": "补充微量元素"
+          }
+        ],
+        "notes": "补充营养，改善饲养环境。"
+      }
+    ],
+    "nursing_care": "改善饲养环境，降低饲养密度。",
+    "priority": 3
+  },
+  {
+    "id": "t36",
+    "disease_id": "d36",
+    "disease_name": "牛蹄叶炎",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：氟尼辛+修蹄",
+        "medications": [
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "消炎镇痛"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "氟尼辛消炎镇痛+修蹄。"
+      }
+    ],
+    "nursing_care": "保持地面干燥，定期修蹄。",
+    "priority": 2
+  },
+  {
+    "id": "t37",
+    "disease_id": "d37",
+    "disease_name": "牛腐蹄病",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：清创+抗生素",
+        "medications": [
+          {
+            "medication_id": "m01",
+            "medication_name": "青霉素钾/钠",
+            "dosage_per_kg": "6-8万单位",
+            "frequency": "每日2次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "控制感染"
+          }
+        ],
+        "oral_medications": [],
+        "notes": "清创+青霉素注射。"
+      }
+    ],
+    "nursing_care": "保持地面干燥，定期修蹄。",
+    "priority": 2
+  },
+  {
+    "id": "t38",
+    "disease_id": "d38",
+    "disease_name": "牛感冒",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：对症治疗",
+        "medications": [
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "退烧"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "板蓝根颗粒",
+            "dosage": "100g拌料200斤",
+            "frequency": "持续",
+            "duration_days": 5,
+            "notes": "清热解毒"
+          }
+        ],
+        "notes": "做好保温，减少应激。"
+      }
+    ],
+    "nursing_care": "做好保温，减少应激。",
+    "priority": 3
+  },
+  {
+    "id": "t39",
+    "disease_id": "d39",
+    "disease_name": "牛肺炎",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：头孢+氟尼辛",
+        "medications": [
+          {
+            "medication_id": "m05",
+            "medication_name": "头孢噻呋",
+            "dosage_per_kg": "5mg",
+            "frequency": "每日1次",
+            "duration_days": 5,
+            "route": "肌肉注射",
+            "notes": "控制感染"
+          },
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "每日1次",
+            "duration_days": 3,
+            "route": "肌肉注射",
+            "notes": "退烧抗炎"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "麻杏石甘散",
+            "dosage": "100g拌料200斤",
+            "frequency": "持续",
+            "duration_days": 7,
+            "notes": "止咳平喘"
+          }
+        ],
+        "notes": "头孢+氟尼辛注射，配合麻杏石甘散。"
+      }
+    ],
+    "nursing_care": "改善通风，降低饲养密度。",
+    "priority": 2
+  },
+  {
+    "id": "t40",
+    "disease_id": "d40",
+    "disease_name": "牛中暑",
+    "treatment_plans": [
+      {
+        "plan_name": "方案一：紧急降温",
+        "medications": [
+          {
+            "medication_id": "m09",
+            "medication_name": "氟尼辛葡甲胺",
+            "dosage_per_kg": "2mg",
+            "frequency": "单次",
+            "duration_days": 1,
+            "route": "肌肉注射",
+            "notes": "退烧"
+          },
+          {
+            "medication_id": "m16",
+            "medication_name": "维生素C",
+            "dosage_per_kg": "20mg",
+            "frequency": "单次",
+            "duration_days": 1,
+            "route": "肌肉注射",
+            "notes": "抗应激"
+          }
+        ],
+        "oral_medications": [
+          {
+            "medication_name": "口服补液盐",
+            "dosage": "自由饮用",
+            "frequency": "持续",
+            "duration_days": 3,
+            "notes": "补充水分和电解质"
+          }
+        ],
+        "notes": "立即将牛转移到阴凉处，用冷水浇头和全身。"
+      }
+    ],
+    "nursing_care": "立即将牛转移到阴凉处，用冷水浇头和全身。",
+    "priority": 1
+  }
+],
+
+  diseaseSymptoms: [
+  {
+    "disease_id": "d01",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d01",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d01",
+    "symptom_id": "s05"
+  },
+  {
+    "disease_id": "d01",
+    "symptom_id": "s46"
+  },
+  {
+    "disease_id": "d01",
+    "symptom_id": "s47"
+  },
+  {
+    "disease_id": "d02",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d02",
+    "symptom_id": "s06"
+  },
+  {
+    "disease_id": "d02",
+    "symptom_id": "s29"
+  },
+  {
+    "disease_id": "d03",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d03",
+    "symptom_id": "s33"
+  },
+  {
+    "disease_id": "d04",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d04",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d04",
+    "symptom_id": "s11"
+  },
+  {
+    "disease_id": "d04",
+    "symptom_id": "s44"
+  },
+  {
+    "disease_id": "d05",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d05",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d05",
+    "symptom_id": "s11"
+  },
+  {
+    "disease_id": "d05",
+    "symptom_id": "s12"
+  },
+  {
+    "disease_id": "d06",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d06",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d06",
+    "symptom_id": "s07"
+  },
+  {
+    "disease_id": "d06",
+    "symptom_id": "s10"
+  },
+  {
+    "disease_id": "d07",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d07",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d07",
+    "symptom_id": "s11"
+  },
+  {
+    "disease_id": "d07",
+    "symptom_id": "s13"
+  },
+  {
+    "disease_id": "d08",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d08",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d08",
+    "symptom_id": "s11"
+  },
+  {
+    "disease_id": "d08",
+    "symptom_id": "s44"
+  },
+  {
+    "disease_id": "d09",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d09",
+    "symptom_id": "s05"
+  },
+  {
+    "disease_id": "d09",
+    "symptom_id": "s07"
+  },
+  {
+    "disease_id": "d09",
+    "symptom_id": "s08"
+  },
+  {
+    "disease_id": "d10",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d10",
+    "symptom_id": "s06"
+  },
+  {
+    "disease_id": "d10",
+    "symptom_id": "s29"
+  },
+  {
+    "disease_id": "d11",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d11",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d11",
+    "symptom_id": "s56"
+  },
+  {
+    "disease_id": "d12",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d12",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d12",
+    "symptom_id": "s19"
+  },
+  {
+    "disease_id": "d12",
+    "symptom_id": "s44"
+  },
+  {
+    "disease_id": "d13",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d13",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d13",
+    "symptom_id": "s17"
+  },
+  {
+    "disease_id": "d14",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d14",
+    "symptom_id": "s21"
+  },
+  {
+    "disease_id": "d14",
+    "symptom_id": "s22"
+  },
+  {
+    "disease_id": "d15",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d15",
+    "symptom_id": "s22"
+  },
+  {
+    "disease_id": "d15",
+    "symptom_id": "s23"
+  },
+  {
+    "disease_id": "d16",
+    "symptom_id": "s25"
+  },
+  {
+    "disease_id": "d16",
+    "symptom_id": "s45"
+  },
+  {
+    "disease_id": "d17",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d17",
+    "symptom_id": "s17"
+  },
+  {
+    "disease_id": "d18",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d18",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d18",
+    "symptom_id": "s33"
+  },
+  {
+    "disease_id": "d19",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d19",
+    "symptom_id": "s07"
+  },
+  {
+    "disease_id": "d19",
+    "symptom_id": "s29"
+  },
+  {
+    "disease_id": "d20",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d20",
+    "symptom_id": "s29"
+  },
+  {
+    "disease_id": "d21",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d21",
+    "symptom_id": "s29"
+  },
+  {
+    "disease_id": "d21",
+    "symptom_id": "s43"
+  },
+  {
+    "disease_id": "d22",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d22",
+    "symptom_id": "s43"
+  },
+  {
+    "disease_id": "d22",
+    "symptom_id": "s29"
+  },
+  {
+    "disease_id": "d23",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d23",
+    "symptom_id": "s06"
+  },
+  {
+    "disease_id": "d23",
+    "symptom_id": "s51"
+  },
+  {
+    "disease_id": "d24",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d24",
+    "symptom_id": "s44"
+  },
+  {
+    "disease_id": "d24",
+    "symptom_id": "s50"
+  },
+  {
+    "disease_id": "d25",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d25",
+    "symptom_id": "s06"
+  },
+  {
+    "disease_id": "d25",
+    "symptom_id": "s51"
+  },
+  {
+    "disease_id": "d26",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d26",
+    "symptom_id": "s06"
+  },
+  {
+    "disease_id": "d26",
+    "symptom_id": "s29"
+  },
+  {
+    "disease_id": "d27",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d27",
+    "symptom_id": "s21"
+  },
+  {
+    "disease_id": "d27",
+    "symptom_id": "s40"
+  },
+  {
+    "disease_id": "d28",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d28",
+    "symptom_id": "s36"
+  },
+  {
+    "disease_id": "d28",
+    "symptom_id": "s49"
+  },
+  {
+    "disease_id": "d29",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d29",
+    "symptom_id": "s35"
+  },
+  {
+    "disease_id": "d29",
+    "symptom_id": "s48"
+  },
+  {
+    "disease_id": "d30",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d30",
+    "symptom_id": "s55"
+  },
+  {
+    "disease_id": "d31",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d31",
+    "symptom_id": "s55"
+  },
+  {
+    "disease_id": "d32",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d32",
+    "symptom_id": "s06"
+  },
+  {
+    "disease_id": "d33",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d33",
+    "symptom_id": "s21"
+  },
+  {
+    "disease_id": "d33",
+    "symptom_id": "s40"
+  },
+  {
+    "disease_id": "d34",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d34",
+    "symptom_id": "s21"
+  },
+  {
+    "disease_id": "d34",
+    "symptom_id": "s40"
+  },
+  {
+    "disease_id": "d35",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d35",
+    "symptom_id": "s06"
+  },
+  {
+    "disease_id": "d36",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d36",
+    "symptom_id": "s20"
+  },
+  {
+    "disease_id": "d36",
+    "symptom_id": "s54"
+  },
+  {
+    "disease_id": "d37",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d37",
+    "symptom_id": "s20"
+  },
+  {
+    "disease_id": "d37",
+    "symptom_id": "s17"
+  },
+  {
+    "disease_id": "d38",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d38",
+    "symptom_id": "s11"
+  },
+  {
+    "disease_id": "d38",
+    "symptom_id": "s13"
+  },
+  {
+    "disease_id": "d39",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d39",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d39",
+    "symptom_id": "s11"
+  },
+  {
+    "disease_id": "d39",
+    "symptom_id": "s44"
+  },
+  {
+    "disease_id": "d40",
+    "symptom_id": "s01"
+  },
+  {
+    "disease_id": "d40",
+    "symptom_id": "s04"
+  },
+  {
+    "disease_id": "d40",
+    "symptom_id": "s44"
+  },
+  {
+    "disease_id": "d40",
+    "symptom_id": "s56"
+  }
+]
+}
+
 module.exports = data
