@@ -1,0 +1,300 @@
+/* pages/index/index.wxss */
+
+.container {
+  padding: 24rpx;
+  padding-bottom: 120rpx;
+}
+
+/* 开发者信息 */
+.developer-info {
+  text-align: center;
+  padding: 16rpx 0;
+  margin-bottom: 24rpx;
+}
+
+.developer-text {
+  font-size: 24rpx;
+  color: #8B4513;
+  background-color: rgba(139, 69, 19, 0.1);
+  padding: 8rpx 24rpx;
+  border-radius: 20rpx;
+}
+
+/* AI智能分析卡片 */
+.diagnosis-card {
+  background: linear-gradient(135deg, #A0522D, #8B4513);
+  border-radius: 24rpx;
+  padding: 32rpx;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 32rpx;
+}
+
+.diagnosis-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+}
+
+.diagnosis-card .tag {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  padding: 8rpx 16rpx;
+  border-radius: 16rpx;
+  font-size: 22rpx;
+}
+
+.diagnosis-card .title {
+  font-size: 48rpx;
+  font-weight: 700;
+  margin: 16rpx 0;
+}
+
+.diagnosis-card .subtitle {
+  font-size: 26rpx;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.diagnosis-card .icon-circle {
+  position: absolute;
+  right: 32rpx;
+  bottom: 32rpx;
+  width: 120rpx;
+  height: 120rpx;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagnosis-card .icon-text {
+  font-size: 60rpx;
+}
+
+/* 区块标题 */
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24rpx;
+  margin-top: 32rpx;
+}
+
+.section-header .section-icon {
+  font-size: 36rpx;
+  margin-right: 12rpx;
+}
+
+.section-header .title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1A1A1A;
+  flex: 1;
+}
+
+.section-header .more {
+  font-size: 24rpx;
+  color: #8B4513;
+}
+
+/* 功能卡片 */
+.feature-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+  margin-bottom: 16rpx;
+}
+
+.feature-card {
+  border-radius: 24rpx;
+  padding: 32rpx;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature-card.blue {
+  background: linear-gradient(135deg, #5AC8FA, #007AFF);
+}
+
+.feature-card.green {
+  background: linear-gradient(135deg, #34C759, #30D158);
+}
+
+.feature-card.orange {
+  background: linear-gradient(135deg, #FF9500, #FF6B00);
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 80%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+}
+
+.feature-card .feature-content {
+  flex: 1;
+  z-index: 1;
+}
+
+.feature-card .feature-tag {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  padding: 6rpx 12rpx;
+  border-radius: 12rpx;
+  font-size: 20rpx;
+  margin-bottom: 12rpx;
+}
+
+.feature-card .feature-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-bottom: 8rpx;
+}
+
+.feature-card .feature-desc {
+  font-size: 24rpx;
+  opacity: 0.9;
+}
+
+.feature-card .feature-icon-circle {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.feature-card .feature-icon-text {
+  font-size: 50rpx;
+}
+
+/* 疾病列表 */
+.disease-list {
+  margin-bottom: 24rpx;
+}
+
+.disease-item {
+  background-color: #FFFFFF;
+  border-radius: 20rpx;
+  padding: 24rpx;
+  margin-bottom: 16rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.05);
+}
+
+.disease-item .icon-wrapper {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20rpx;
+}
+
+.disease-item .disease-icon {
+  font-size: 40rpx;
+}
+
+.disease-item .content {
+  flex: 1;
+}
+
+.disease-item .content .name {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1A1A1A;
+}
+
+.disease-item .content .desc {
+  font-size: 24rpx;
+  color: #666666;
+  margin-top: 8rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.disease-item .content .tags {
+  display: flex;
+  gap: 12rpx;
+  margin-top: 12rpx;
+}
+
+.disease-item .arrow {
+  font-size: 40rpx;
+  color: #CCCCCC;
+  margin-left: 16rpx;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8rpx 16rpx;
+  border-radius: 16rpx;
+  font-size: 22rpx;
+  font-weight: 500;
+}
+
+.tag-primary {
+  background-color: rgba(139, 69, 19, 0.1);
+  color: #8B4513;
+}
+
+.tag-danger {
+  background-color: rgba(255, 71, 87, 0.1);
+  color: #FF4757;
+}
+
+/* 数据统计 */
+.stats-card {
+  background-color: #FFFFFF;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.05);
+  margin-top: 32rpx;
+}
+
+.stats-card .stat-item {
+  text-align: center;
+}
+
+.stats-card .stat-value {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #8B4513;
+}
+
+.stats-card .stat-label {
+  font-size: 24rpx;
+  color: #666666;
+  margin-top: 8rpx;
+}
+
+.stats-card .stat-divider {
+  width: 2rpx;
+  height: 60rpx;
+  background-color: #EEEEEE;
+}

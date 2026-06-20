@@ -1,0 +1,103 @@
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <!-- 顶部开发者信息 -->
+  <view class="developer-info">
+    <text class="developer-text">{{texts.developer}}</text>
+  </view>
+
+  <!-- AI智能分析卡片 -->
+  <view class="diagnosis-card" bindtap="goToDiagnosis">
+    <view class="tag">{{texts.aiDiagnosis}}</view>
+    <view class="title">{{texts.startDiagnosis}}</view>
+    <view class="subtitle">{{texts.selectSymptoms}}</view>
+    <view class="icon-circle">
+      <text class="icon-text">🐄</text>
+    </view>
+  </view>
+
+  <!-- 快速入口 -->
+  <view class="section-header">
+    <text class="section-icon">📊</text>
+    <text class="title">{{texts.quickEntry}}</text>
+  </view>
+
+  <!-- 功能卡片 -->
+  <view class="feature-cards">
+    <!-- 疫苗接种流程 -->
+    <view class="feature-card blue" bindtap="goToVaccination">
+      <view class="feature-content">
+        <view class="feature-tag">{{language === 'en' ? 'Schedule' : '流程'}}</view>
+        <view class="feature-title">{{texts.vaccination}}</view>
+        <view class="feature-desc">{{texts.vaccinationDesc}}</view>
+      </view>
+      <view class="feature-icon-circle">
+        <text class="feature-icon-text">💉</text>
+      </view>
+    </view>
+
+    <!-- 今日牛价 -->
+    <view class="feature-card green" bindtap="goToCattlePrice">
+      <view class="feature-content">
+        <view class="feature-tag">{{language === 'en' ? 'Real-time' : '实时'}}</view>
+        <view class="feature-title">{{texts.cattlePrice}}</view>
+        <view class="feature-desc">{{texts.cattlePriceDesc}}</view>
+      </view>
+      <view class="feature-icon-circle">
+        <text class="feature-icon-text">💰</text>
+      </view>
+    </view>
+
+    <!-- 养殖技巧 -->
+    <view class="feature-card orange" bindtap="goToBreedingTips">
+      <view class="feature-content">
+        <view class="feature-tag">{{language === 'en' ? 'Tips' : '技巧'}}</view>
+        <view class="feature-title">{{texts.breedingTips}}</view>
+        <view class="feature-desc">{{texts.breedingTipsDesc}}</view>
+      </view>
+      <view class="feature-icon-circle">
+        <text class="feature-icon-text">📚</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 常见疾病 -->
+  <view class="section-header">
+    <text class="section-icon">🏥</text>
+    <text class="title">{{texts.commonDiseases}}</text>
+    <view class="more" bindtap="goToEncyclopedia">{{texts.viewAll}}</view>
+  </view>
+  <view class="disease-list">
+    <view class="disease-item" wx:for="{{highSeverityDiseases}}" wx:key="id" bindtap="goToDiseaseDetail" data-id="{{item.id}}">
+      <view class="icon-wrapper" style="background-color: rgba(255, 71, 87, 0.1);">
+        <text class="disease-icon">⚠️</text>
+      </view>
+      <view class="content">
+        <view class="name">{{item.name}}</view>
+        <view class="desc">{{item.description}}</view>
+        <view class="tags">
+          <view class="tag tag-danger">{{texts.highRisk}}</view>
+          <view class="tag tag-primary" wx:if="{{item.is_contagious}}">{{texts.contagious}}</view>
+        </view>
+      </view>
+      <text class="arrow">›</text>
+    </view>
+  </view>
+
+  <!-- 数据统计 -->
+  <view class="stats-card">
+    <view class="stat-item">
+      <view class="stat-value">{{diseases.length}}</view>
+      <view class="stat-label">{{texts.diseaseTypes}}</view>
+    </view>
+    <view class="stat-divider"></view>
+    <view class="stat-item">
+      <view class="stat-value">{{symptoms.length}}</view>
+      <view class="stat-label">{{texts.symptomTypes}}</view>
+    </view>
+    <view class="stat-divider"></view>
+    <view class="stat-item">
+      <view class="stat-value">{{medications.length}}</view>
+      <view class="stat-label">{{texts.medicationTypes}}</view>
+    </view>
+  </view>
+</view>
