@@ -2629,7 +2629,7 @@ const data = {
     "nursing_care": "鍔犲己濡婂鏈熼ゲ鍏荤鐞嗐€?,
     "priority": 1
   }
-],diseaseSymptoms: [
+],\n\n  diseaseSymptoms: [
   {
     "disease_id": "d01",
     "symptom_id": "s01"
