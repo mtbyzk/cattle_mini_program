@@ -28,20 +28,20 @@ Page({
 
       // 成年母牛疫苗
       {id: "v13", name: "口蹄疫疫苗", type: "cow", typeName: "成年母牛", time: "配种前", dosage: "1头份", route: "肌肉注射", notes: "每4-6个月接种一次", importance: "high"},
-      {id": "v14", name: "牛瘟疫苗", type: "cow", typeName: "成年母牛", time: "配种前", dosage: "1头份", route: "皮下注射", notes: "每年接种一次", importance: "high"},
+      {id: "v14", name: "牛瘟疫苗", type: "cow", typeName: "成年母牛", time: "配种前", dosage: "1头份", route: "皮下注射", notes: "每年接种一次", importance: "high"},
       {id: "v15", name: "牛病毒性腹泻疫苗", type: "cow", typeName: "成年母牛", time: "配种前", dosage: "1头份", route: "肌肉注射", notes: "预防垂直传播", importance: "medium"},
-      {id: "v16", name: "牛传染性鼻气管炎疫苗", type: "cow", typeName: "成年母牛", time: "配种前", dosage: "1头份", route: "肌肉注射", notes": "预防流产", importance: "medium"},
-      {id: "v17", name: "大肠杆菌疫苗", type: "cow", typeName: "成年母牛", time: "产前4-6周", dosage: "1头份", route: "肌肉注射", notes": "预防犊牛腹泻", importance: "high"},
-      {id: "v18", name: "梭菌疫苗", type: "cow", typeName: "成年母牛", time: "产前4-6周", dosage: "1头份", route: "肌肉注射", notes": "预防犊牛梭菌感染", importance: "medium"},
+      {id: "v16", name: "牛传染性鼻气管炎疫苗", type: "cow", typeName: "成年母牛", time: "配种前", dosage: "1头份", route: "肌肉注射", notes: "预防流产", importance: "medium"},
+      {id: "v17", name: "大肠杆菌疫苗", type: "cow", typeName: "成年母牛", time: "产前4-6周", dosage: "1头份", route: "肌肉注射", notes: "预防犊牛腹泻", importance: "high"},
+      {id: "v18", name: "梭菌疫苗", type: "cow", typeName: "成年母牛", time: "产前4-6周", dosage: "1头份", route: "肌肉注射", notes: "预防犊牛梭菌感染", importance: "medium"},
       {id: "v19", name: "牛巴氏杆菌疫苗", type: "cow", typeName: "成年母牛", time: "每年", dosage: "1头份", route: "皮下注射", notes: "预防牛出败", importance: "medium"},
       {id: "v20", name: "气肿疽疫苗", type: "cow", typeName: "成年母牛", time: "每年", dosage: "1头份", route: "皮下注射", notes: "预防黑腿病", importance: "high"},
 
       // 种公牛疫苗
       {id: "v21", name: "口蹄疫疫苗", type: "bull", typeName: "种公牛", time: "每6个月", dosage: "1头份", route: "肌肉注射", notes: "定期接种", importance: "high"},
       {id: "v22", name: "牛瘟疫苗", type: "bull", typeName: "种公牛", time: "每年", dosage: "1头份", route: "皮下注射", notes: "定期接种", importance: "high"},
-      {id: "v23", name": "牛布氏杆菌疫苗", type: "bull", typeName: "种公牛", time: "每年", dosage: "1头份", route: "皮下注射", notes: "定期检测，必要时接种", importance: "high"},
-      {id: "v24", name": "牛巴氏杆菌疫苗", type: "bull", typeName: "种公牛", time: "每年", dosage: "1头份", route: "皮下注射", notes: "预防牛出败", importance: "medium"},
-      {id: "v25", name": "气肿疽疫苗", type: "bull", typeName: "种公牛", time: "每年", dosage: "1头份", route: "皮下注射", notes: "预防黑腿病", importance: "high"}
+      {id: "v23", name: "牛布氏杆菌疫苗", type: "bull", typeName: "种公牛", time: "每年", dosage: "1头份", route: "皮下注射", notes: "定期检测，必要时接种", importance: "high"},
+      {id: "v24", name: "牛巴氏杆菌疫苗", type: "bull", typeName: "种公牛", time: "每年", dosage: "1头份", route: "皮下注射", notes: "预防牛出败", importance: "medium"},
+      {id: "v25", name: "气肿疽疫苗", type: "bull", typeName: "种公牛", time: "每年", dosage: "1头份", route: "皮下注射", notes: "预防黑腿病", importance: "high"}
     ],
     filteredVaccines: []
   },
@@ -58,10 +58,9 @@ Page({
 
   filterVaccines() {
     const { vaccines, selectedType } = this.data
-    let filtered = selectedType === 'all'
+    const filtered = selectedType === 'all'
       ? vaccines
       : vaccines.filter(v => v.type === selectedType)
-    
     this.setData({ filteredVaccines: filtered })
   },
 
