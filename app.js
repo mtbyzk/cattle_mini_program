@@ -63,6 +63,11 @@ App({
     return this.globalData.diseases.find(d => d.id === id)
   },
 
+  // 根据ID获取治疗方案
+  getTreatmentByDiseaseId(diseaseId) {
+    return this.globalData.treatments.find(t => t.disease_id === diseaseId)
+  },
+
   // 搜索疾病
   searchDiseases(query) {
     if (!query) return this.globalData.diseases
