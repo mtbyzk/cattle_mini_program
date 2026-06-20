@@ -1,687 +1,687 @@
-// data/data.js - 所有数据
+﻿// data/data.js - 鎵€鏈夋暟鎹?
 const data = {
   diseases: [
   {
     "id": "d01",
-    "name": "牛口蹄疫",
-    "alias": "口疮",
-    "description": "牛口蹄疫是由口蹄疫病毒引起的一种急性、热性、高度接触性传染病。",
+    "name": "鐗涘彛韫勭柅",
+    "alias": "鍙ｇ柈",
+    "description": "鐗涘彛韫勭柅鏄敱鍙ｈ箘鐤梾姣掑紩璧风殑涓€绉嶆€ユ€с€佺儹鎬с€侀珮搴︽帴瑙︽€т紶鏌撶梾銆?,
     "severity": "high",
     "is_contagious": true,
-    "incubation_period": "2-7天",
-    "mortality_rate": "成年牛较低，犊牛可达50%以上"
+    "incubation_period": "2-7澶?,
+    "mortality_rate": "鎴愬勾鐗涜緝浣庯紝鐘婄墰鍙揪50%浠ヤ笂"
   },
   {
     "id": "d02",
-    "name": "牛结核病",
-    "alias": "痨病",
-    "description": "牛结核病是由结核分枝杆菌引起的一种慢性消耗性传染病。",
+    "name": "鐗涚粨鏍哥梾",
+    "alias": "鐥ㄧ梾",
+    "description": "鐗涚粨鏍哥梾鏄敱缁撴牳鍒嗘灊鏉嗚弻寮曡捣鐨勪竴绉嶆參鎬ф秷鑰楁€т紶鏌撶梾銆?,
     "severity": "medium",
     "is_contagious": true,
-    "incubation_period": "数周至数月",
-    "mortality_rate": "慢性消耗致死"
+    "incubation_period": "鏁板懆鑷虫暟鏈?,
+    "mortality_rate": "鎱㈡€ф秷鑰楄嚧姝?
   },
   {
     "id": "d03",
-    "name": "牛布氏杆菌病",
-    "alias": "布病",
-    "description": "牛布氏杆菌病是由布氏杆菌引起的一种人畜共患传染病。",
+    "name": "鐗涘竷姘忔潌鑿岀梾",
+    "alias": "甯冪梾",
+    "description": "鐗涘竷姘忔潌鑿岀梾鏄敱甯冩皬鏉嗚弻寮曡捣鐨勪竴绉嶄汉鐣滃叡鎮ｄ紶鏌撶梾銆?,
     "severity": "medium",
     "is_contagious": true,
-    "incubation_period": "2-4周",
-    "mortality_rate": "较低，但引起流产"
+    "incubation_period": "2-4鍛?,
+    "mortality_rate": "杈冧綆锛屼絾寮曡捣娴佷骇"
   },
   {
     "id": "d04",
-    "name": "牛肺疫",
-    "alias": "牛传染性胸膜肺炎",
-    "description": "牛肺疫是由丝状支原体丝状亚种引起的一种高度接触性呼吸道传染病。",
+    "name": "鐗涜偤鐤?,
+    "alias": "鐗涗紶鏌撴€ц兏鑶滆偤鐐?,
+    "description": "鐗涜偤鐤槸鐢变笣鐘舵敮鍘熶綋涓濈姸浜氱寮曡捣鐨勪竴绉嶉珮搴︽帴瑙︽€у懠鍚搁亾浼犳煋鐥呫€?,
     "severity": "high",
     "is_contagious": true,
-    "incubation_period": "2-4周",
-    "mortality_rate": "急性型可达50%以上"
+    "incubation_period": "2-4鍛?,
+    "mortality_rate": "鎬ユ€у瀷鍙揪50%浠ヤ笂"
   },
   {
     "id": "d05",
-    "name": "牛流行热",
-    "alias": "三日热",
-    "description": "牛流行热是由牛流行热病毒引起的一种急性热性传染病。",
+    "name": "鐗涙祦琛岀儹",
+    "alias": "涓夋棩鐑?,
+    "description": "鐗涙祦琛岀儹鏄敱鐗涙祦琛岀儹鐥呮瘨寮曡捣鐨勪竴绉嶆€ユ€х儹鎬т紶鏌撶梾銆?,
     "severity": "medium",
     "is_contagious": true,
-    "incubation_period": "2-3天",
-    "mortality_rate": "较低"
+    "incubation_period": "2-3澶?,
+    "mortality_rate": "杈冧綆"
   },
   {
     "id": "d06",
-    "name": "牛病毒性腹泻",
+    "name": "鐗涚梾姣掓€ц吂娉?,
     "alias": "BVD",
-    "description": "牛病毒性腹泻是由牛病毒性腹泻病毒引起的一种急性传染病。",
+    "description": "鐗涚梾姣掓€ц吂娉绘槸鐢辩墰鐥呮瘨鎬ц吂娉荤梾姣掑紩璧风殑涓€绉嶆€ユ€т紶鏌撶梾銆?,
     "severity": "medium",
     "is_contagious": true,
-    "incubation_period": "5-10天",
-    "mortality_rate": "犊牛较高"
+    "incubation_period": "5-10澶?,
+    "mortality_rate": "鐘婄墰杈冮珮"
   },
   {
     "id": "d07",
-    "name": "牛传染性鼻气管炎",
+    "name": "鐗涗紶鏌撴€ч蓟姘旂鐐?,
     "alias": "IBR",
-    "description": "牛传染性鼻气管炎是由牛疱疹病毒引起的一种急性传染病。",
+    "description": "鐗涗紶鏌撴€ч蓟姘旂鐐庢槸鐢辩墰鐤辩柟鐥呮瘨寮曡捣鐨勪竴绉嶆€ユ€т紶鏌撶梾銆?,
     "severity": "medium",
     "is_contagious": true,
-    "incubation_period": "3-7天",
-    "mortality_rate": "较低"
+    "incubation_period": "3-7澶?,
+    "mortality_rate": "杈冧綆"
   },
   {
     "id": "d08",
-    "name": "牛巴氏杆菌病",
-    "alias": "牛出血性败血症",
-    "description": "牛巴氏杆菌病是由多杀性巴氏杆菌引起的一种急性传染病。",
+    "name": "鐗涘反姘忔潌鑿岀梾",
+    "alias": "鐗涘嚭琛€鎬ц触琛€鐥?,
+    "description": "鐗涘反姘忔潌鑿岀梾鏄敱澶氭潃鎬у反姘忔潌鑿屽紩璧风殑涓€绉嶆€ユ€т紶鏌撶梾銆?,
     "severity": "high",
     "is_contagious": true,
-    "incubation_period": "1-3天",
-    "mortality_rate": "急性型可达80%以上"
+    "incubation_period": "1-3澶?,
+    "mortality_rate": "鎬ユ€у瀷鍙揪80%浠ヤ笂"
   },
   {
     "id": "d09",
-    "name": "犊牛大肠杆菌病",
-    "alias": "犊牛白痢",
-    "description": "犊牛大肠杆菌病是由致病性大肠杆菌引起的新生犊牛急性肠道传染病。",
+    "name": "鐘婄墰澶ц偁鏉嗚弻鐥?,
+    "alias": "鐘婄墰鐧界棦",
+    "description": "鐘婄墰澶ц偁鏉嗚弻鐥呮槸鐢辫嚧鐥呮€уぇ鑲犳潌鑿屽紩璧风殑鏂扮敓鐘婄墰鎬ユ€ц偁閬撲紶鏌撶梾銆?,
     "severity": "high",
     "is_contagious": true,
-    "incubation_period": "数小时至1-2天",
-    "mortality_rate": "可达50%以上"
+    "incubation_period": "鏁板皬鏃惰嚦1-2澶?,
+    "mortality_rate": "鍙揪50%浠ヤ笂"
   },
   {
     "id": "d10",
-    "name": "牛副结核病",
-    "alias": "副结核性肠炎",
-    "description": "牛副结核病是由副结核分枝杆菌引起的一种慢性消耗性肠道传染病。",
+    "name": "鐗涘壇缁撴牳鐥?,
+    "alias": "鍓粨鏍告€ц偁鐐?,
+    "description": "鐗涘壇缁撴牳鐥呮槸鐢卞壇缁撴牳鍒嗘灊鏉嗚弻寮曡捣鐨勪竴绉嶆參鎬ф秷鑰楁€ц偁閬撲紶鏌撶梾銆?,
     "severity": "medium",
     "is_contagious": true,
-    "incubation_period": "数月至数年",
-    "mortality_rate": "慢性消耗致死"
+    "incubation_period": "鏁版湀鑷虫暟骞?,
+    "mortality_rate": "鎱㈡€ф秷鑰楄嚧姝?
   },
   {
     "id": "d11",
-    "name": "牛炭疽",
-    "alias": "炭疽",
-    "description": "牛炭疽是由炭疽杆菌引起的一种急性、热性、败血性传染病。",
+    "name": "鐗涚偔鐤?,
+    "alias": "鐐柦",
+    "description": "鐗涚偔鐤芥槸鐢辩偔鐤芥潌鑿屽紩璧风殑涓€绉嶆€ユ€с€佺儹鎬с€佽触琛€鎬т紶鏌撶梾銆?,
     "severity": "high",
     "is_contagious": true,
-    "incubation_period": "1-5天",
-    "mortality_rate": "急性型可达100%"
+    "incubation_period": "1-5澶?,
+    "mortality_rate": "鎬ユ€у瀷鍙揪100%"
   },
   {
     "id": "d12",
-    "name": "牛气肿疽",
-    "alias": "黑腿病",
-    "description": "牛气肿疽是由气肿疽梭菌引起的一种急性、热性、败血性传染病。",
+    "name": "鐗涙皵鑲跨柦",
+    "alias": "榛戣吙鐥?,
+    "description": "鐗涙皵鑲跨柦鏄敱姘旇偪鐤芥鑿屽紩璧风殑涓€绉嶆€ユ€с€佺儹鎬с€佽触琛€鎬т紶鏌撶梾銆?,
     "severity": "high",
     "is_contagious": true,
-    "incubation_period": "3-5天",
-    "mortality_rate": "急性型可达80%以上"
+    "incubation_period": "3-5澶?,
+    "mortality_rate": "鎬ユ€у瀷鍙揪80%浠ヤ笂"
   },
   {
     "id": "d13",
-    "name": "牛恶性水肿",
-    "alias": "恶性水肿",
-    "description": "牛恶性水肿是由腐败梭菌引起的一种急性、创伤性传染病。",
+    "name": "鐗涙伓鎬ф按鑲?,
+    "alias": "鎭舵€ф按鑲?,
+    "description": "鐗涙伓鎬ф按鑲挎槸鐢辫厫璐ユ鑿屽紩璧风殑涓€绉嶆€ユ€с€佸垱浼ゆ€т紶鏌撶梾銆?,
     "severity": "high",
     "is_contagious": true,
-    "incubation_period": "1-3天",
-    "mortality_rate": "较高"
+    "incubation_period": "1-3澶?,
+    "mortality_rate": "杈冮珮"
   },
   {
     "id": "d14",
-    "name": "牛破伤风",
-    "alias": "锁口风",
-    "description": "牛破伤风是由破伤风梭菌引起的一种急性中毒性传染病。",
+    "name": "鐗涚牬浼ら",
+    "alias": "閿佸彛椋?,
+    "description": "鐗涚牬浼ら鏄敱鐮翠激椋庢鑿屽紩璧风殑涓€绉嶆€ユ€т腑姣掓€т紶鏌撶梾銆?,
     "severity": "high",
     "is_contagious": false,
-    "incubation_period": "1-2周",
-    "mortality_rate": "较高"
+    "incubation_period": "1-2鍛?,
+    "mortality_rate": "杈冮珮"
   },
   {
     "id": "d15",
-    "name": "牛狂犬病",
-    "alias": "疯牛病",
-    "description": "牛狂犬病是由狂犬病病毒引起的一种急性传染病。",
+    "name": "鐗涚媯鐘梾",
+    "alias": "鐤墰鐥?,
+    "description": "鐗涚媯鐘梾鏄敱鐙傜姮鐥呯梾姣掑紩璧风殑涓€绉嶆€ユ€т紶鏌撶梾銆?,
     "severity": "high",
     "is_contagious": true,
-    "incubation_period": "2-8周",
+    "incubation_period": "2-8鍛?,
     "mortality_rate": "100%"
   },
   {
     "id": "d16",
-    "name": "牛传染性角膜结膜炎",
-    "alias": "红眼病",
-    "description": "牛传染性角膜结膜炎是由牛摩拉克菌引起的一种急性传染病。",
+    "name": "鐗涗紶鏌撴€ц鑶滅粨鑶滅値",
+    "alias": "绾㈢溂鐥?,
+    "description": "鐗涗紶鏌撴€ц鑶滅粨鑶滅値鏄敱鐗涙懇鎷夊厠鑿屽紩璧风殑涓€绉嶆€ユ€т紶鏌撶梾銆?,
     "severity": "low",
     "is_contagious": true,
-    "incubation_period": "3-7天",
-    "mortality_rate": "低"
+    "incubation_period": "3-7澶?,
+    "mortality_rate": "浣?
   },
   {
     "id": "d17",
-    "name": "牛放线菌病",
-    "alias": "大颌病",
-    "description": "牛放线菌病是由牛放线菌引起的一种慢性传染病。",
+    "name": "鐗涙斁绾胯弻鐥?,
+    "alias": "澶ч鐥?,
+    "description": "鐗涙斁绾胯弻鐥呮槸鐢辩墰鏀剧嚎鑿屽紩璧风殑涓€绉嶆參鎬т紶鏌撶梾銆?,
     "severity": "medium",
     "is_contagious": true,
-    "incubation_period": "数周",
-    "mortality_rate": "低"
+    "incubation_period": "鏁板懆",
+    "mortality_rate": "浣?
   },
   {
     "id": "d18",
-    "name": "牛衣原体病",
-    "alias": "衣原体感染",
-    "description": "牛衣原体病是由衣原体引起的一种传染病。",
+    "name": "鐗涜。鍘熶綋鐥?,
+    "alias": "琛ｅ師浣撴劅鏌?,
+    "description": "鐗涜。鍘熶綋鐥呮槸鐢辫。鍘熶綋寮曡捣鐨勪竴绉嶄紶鏌撶梾銆?,
     "severity": "medium",
     "is_contagious": true,
-    "incubation_period": "1-3周",
-    "mortality_rate": "较低"
+    "incubation_period": "1-3鍛?,
+    "mortality_rate": "杈冧綆"
   },
   {
     "id": "d19",
-    "name": "牛球虫病",
-    "alias": "球虫感染",
-    "description": "牛球虫病是由球虫引起的一种肠道寄生虫病。",
+    "name": "鐗涚悆铏梾",
+    "alias": "鐞冭櫕鎰熸煋",
+    "description": "鐗涚悆铏梾鏄敱鐞冭櫕寮曡捣鐨勪竴绉嶈偁閬撳瘎鐢熻櫕鐥呫€?,
     "severity": "medium",
     "is_contagious": true,
-    "incubation_period": "1-2周",
-    "mortality_rate": "犊牛较高"
+    "incubation_period": "1-2鍛?,
+    "mortality_rate": "鐘婄墰杈冮珮"
   },
   {
     "id": "d20",
-    "name": "牛肝片吸虫病",
-    "alias": "肝蛭病",
-    "description": "牛肝片吸虫病是由肝片吸虫引起的一种寄生虫病。",
+    "name": "鐗涜倽鐗囧惛铏梾",
+    "alias": "鑲濊洯鐥?,
+    "description": "鐗涜倽鐗囧惛铏梾鏄敱鑲濈墖鍚歌櫕寮曡捣鐨勪竴绉嶅瘎鐢熻櫕鐥呫€?,
     "severity": "medium",
     "is_contagious": false,
-    "incubation_period": "6-12周",
-    "mortality_rate": "慢性消耗致死"
+    "incubation_period": "6-12鍛?,
+    "mortality_rate": "鎱㈡€ф秷鑰楄嚧姝?
   },
   {
     "id": "d21",
-    "name": "牛绦虫病",
-    "alias": "绦虫感染",
-    "description": "牛绦虫病是由绦虫引起的一种肠道寄生虫病。",
+    "name": "鐗涚沪铏梾",
+    "alias": "缁﹁櫕鎰熸煋",
+    "description": "鐗涚沪铏梾鏄敱缁﹁櫕寮曡捣鐨勪竴绉嶈偁閬撳瘎鐢熻櫕鐥呫€?,
     "severity": "low",
     "is_contagious": false,
-    "incubation_period": "4-8周",
-    "mortality_rate": "低"
+    "incubation_period": "4-8鍛?,
+    "mortality_rate": "浣?
   },
   {
     "id": "d22",
-    "name": "牛螨病",
-    "alias": "疥癣",
-    "description": "牛螨病是由螨虫引起的一种体外寄生虫病。",
+    "name": "鐗涜灗鐥?,
+    "alias": "鐤ョ櫍",
+    "description": "鐗涜灗鐥呮槸鐢辫灗铏紩璧风殑涓€绉嶄綋澶栧瘎鐢熻櫕鐥呫€?,
     "severity": "low",
     "is_contagious": true,
-    "incubation_period": "2-4周",
-    "mortality_rate": "低"
+    "incubation_period": "2-4鍛?,
+    "mortality_rate": "浣?
   },
   {
     "id": "d23",
-    "name": "牛前胃弛缓",
-    "alias": "消化不良",
-    "description": "牛前胃弛缓是由于饲养管理不当引起的一种消化系统疾病。",
+    "name": "鐗涘墠鑳冨紱缂?,
+    "alias": "娑堝寲涓嶈壇",
+    "description": "鐗涘墠鑳冨紱缂撴槸鐢变簬楗插吇绠＄悊涓嶅綋寮曡捣鐨勪竴绉嶆秷鍖栫郴缁熺柧鐥呫€?,
     "severity": "low",
     "is_contagious": false,
-    "incubation_period": "数天",
-    "mortality_rate": "低"
+    "incubation_period": "鏁板ぉ",
+    "mortality_rate": "浣?
   },
   {
     "id": "d24",
-    "name": "牛瘤胃臌气",
-    "alias": "胀气",
-    "description": "牛瘤胃臌气是由于采食易发酵饲料引起的一种急性疾病。",
+    "name": "鐗涚槫鑳冭噷姘?,
+    "alias": "鑳€姘?,
+    "description": "鐗涚槫鑳冭噷姘旀槸鐢变簬閲囬鏄撳彂閰甸ゲ鏂欏紩璧风殑涓€绉嶆€ユ€х柧鐥呫€?,
     "severity": "high",
     "is_contagious": false,
-    "incubation_period": "数小时",
-    "mortality_rate": "急性型较高"
+    "incubation_period": "鏁板皬鏃?,
+    "mortality_rate": "鎬ユ€у瀷杈冮珮"
   },
   {
     "id": "d25",
-    "name": "牛瘤胃酸中毒",
-    "alias": "酸中毒",
-    "description": "牛瘤胃酸中毒是由于采食过多精料引起的一种代谢性疾病。",
+    "name": "鐗涚槫鑳冮吀涓瘨",
+    "alias": "閰镐腑姣?,
+    "description": "鐗涚槫鑳冮吀涓瘨鏄敱浜庨噰椋熻繃澶氱簿鏂欏紩璧风殑涓€绉嶄唬璋㈡€х柧鐥呫€?,
     "severity": "high",
     "is_contagious": false,
-    "incubation_period": "数小时",
-    "mortality_rate": "较高"
+    "incubation_period": "鏁板皬鏃?,
+    "mortality_rate": "杈冮珮"
   },
   {
     "id": "d26",
-    "name": "牛酮病",
-    "alias": "酮血症",
-    "description": "牛酮病是由于能量代谢障碍引起的一种营养代谢病。",
+    "name": "鐗涢叜鐥?,
+    "alias": "閰鐥?,
+    "description": "鐗涢叜鐥呮槸鐢变簬鑳介噺浠ｈ阿闅滅寮曡捣鐨勪竴绉嶈惀鍏讳唬璋㈢梾銆?,
     "severity": "medium",
     "is_contagious": false,
-    "incubation_period": "数天",
-    "mortality_rate": "较低"
+    "incubation_period": "鏁板ぉ",
+    "mortality_rate": "杈冧綆"
   },
   {
     "id": "d27",
-    "name": "牛生产瘫痪",
-    "alias": "产后瘫痪",
-    "description": "牛生产瘫痪是由于产后低血钙引起的一种代谢性疾病。",
+    "name": "鐗涚敓浜х槴鐥?,
+    "alias": "浜у悗鐦棯",
+    "description": "鐗涚敓浜х槴鐥槸鐢变簬浜у悗浣庤閽欏紩璧风殑涓€绉嶄唬璋㈡€х柧鐥呫€?,
     "severity": "high",
     "is_contagious": false,
-    "incubation_period": "产后1-3天",
-    "mortality_rate": "较高"
+    "incubation_period": "浜у悗1-3澶?,
+    "mortality_rate": "杈冮珮"
   },
   {
     "id": "d28",
-    "name": "牛子宫内膜炎",
-    "alias": "子宫炎",
-    "description": "牛子宫内膜炎是由于细菌感染引起的一种生殖系统疾病。",
+    "name": "鐗涘瓙瀹唴鑶滅値",
+    "alias": "瀛愬鐐?,
+    "description": "鐗涘瓙瀹唴鑶滅値鏄敱浜庣粏鑿屾劅鏌撳紩璧风殑涓€绉嶇敓娈栫郴缁熺柧鐥呫€?,
     "severity": "medium",
     "is_contagious": false,
-    "incubation_period": "产后3-5天",
-    "mortality_rate": "低"
+    "incubation_period": "浜у悗3-5澶?,
+    "mortality_rate": "浣?
   },
   {
     "id": "d29",
-    "name": "牛乳房炎",
-    "alias": "乳腺炎",
-    "description": "牛乳房炎是由于细菌感染引起的一种乳房疾病。",
+    "name": "鐗涗钩鎴跨値",
+    "alias": "涔宠吅鐐?,
+    "description": "鐗涗钩鎴跨値鏄敱浜庣粏鑿屾劅鏌撳紩璧风殑涓€绉嶄钩鎴跨柧鐥呫€?,
     "severity": "medium",
     "is_contagious": false,
-    "incubation_period": "1-3天",
-    "mortality_rate": "低"
+    "incubation_period": "1-3澶?,
+    "mortality_rate": "浣?
   },
   {
     "id": "d30",
-    "name": "牛胎衣不下",
-    "alias": "胎盘滞留",
-    "description": "牛胎衣不下是母牛产后胎膜不能正常排出的一种产科疾病。",
+    "name": "鐗涜儙琛ｄ笉涓?,
+    "alias": "鑳庣洏婊炵暀",
+    "description": "鐗涜儙琛ｄ笉涓嬫槸姣嶇墰浜у悗鑳庤啘涓嶈兘姝ｅ父鎺掑嚭鐨勪竴绉嶄骇绉戠柧鐥呫€?,
     "severity": "medium",
     "is_contagious": false,
-    "incubation_period": "产后数小时",
-    "mortality_rate": "低"
+    "incubation_period": "浜у悗鏁板皬鏃?,
+    "mortality_rate": "浣?
   },
   {
     "id": "d31",
-    "name": "牛难产",
-    "alias": "产力性难产",
-    "description": "牛难产是母牛分娩过程中胎儿不能正常产出的一种产科疾病。",
+    "name": "鐗涢毦浜?,
+    "alias": "浜у姏鎬ч毦浜?,
+    "description": "鐗涢毦浜ф槸姣嶇墰鍒嗗ī杩囩▼涓儙鍎夸笉鑳芥甯镐骇鍑虹殑涓€绉嶄骇绉戠柧鐥呫€?,
     "severity": "high",
     "is_contagious": false,
-    "incubation_period": "分娩时",
-    "mortality_rate": "较高"
+    "incubation_period": "鍒嗗ī鏃?,
+    "mortality_rate": "杈冮珮"
   },
   {
     "id": "d32",
-    "name": "牛维生素A缺乏症",
-    "alias": "夜盲症",
-    "description": "牛维生素A缺乏症是由于维生素A缺乏引起的一种营养代谢病。",
+    "name": "鐗涚淮鐢熺礌A缂轰箯鐥?,
+    "alias": "澶滅洸鐥?,
+    "description": "鐗涚淮鐢熺礌A缂轰箯鐥囨槸鐢变簬缁寸敓绱燗缂轰箯寮曡捣鐨勪竴绉嶈惀鍏讳唬璋㈢梾銆?,
     "severity": "low",
     "is_contagious": false,
-    "incubation_period": "数周",
-    "mortality_rate": "低"
+    "incubation_period": "鏁板懆",
+    "mortality_rate": "浣?
   },
   {
     "id": "d33",
-    "name": "牛白肌病",
-    "alias": "硒缺乏症",
-    "description": "牛白肌病是由于硒元素缺乏引起的一种营养代谢病。",
+    "name": "鐗涚櫧鑲岀梾",
+    "alias": "纭掔己涔忕棁",
+    "description": "鐗涚櫧鑲岀梾鏄敱浜庣鍏冪礌缂轰箯寮曡捣鐨勪竴绉嶈惀鍏讳唬璋㈢梾銆?,
     "severity": "medium",
     "is_contagious": false,
-    "incubation_period": "数周",
-    "mortality_rate": "较高"
+    "incubation_period": "鏁板懆",
+    "mortality_rate": "杈冮珮"
   },
   {
     "id": "d34",
-    "name": "牛佝偻病",
-    "alias": "软骨病",
-    "description": "牛佝偻病是由于钙磷代谢障碍引起的一种营养代谢病。",
+    "name": "鐗涗綕鍋荤梾",
+    "alias": "杞鐥?,
+    "description": "鐗涗綕鍋荤梾鏄敱浜庨挋纾蜂唬璋㈤殰纰嶅紩璧风殑涓€绉嶈惀鍏讳唬璋㈢梾銆?,
     "severity": "low",
     "is_contagious": false,
-    "incubation_period": "数周",
-    "mortality_rate": "低"
+    "incubation_period": "鏁板懆",
+    "mortality_rate": "浣?
   },
   {
     "id": "d35",
-    "name": "牛异食癖",
-    "alias": "异食症",
-    "description": "牛异食癖是由于营养缺乏或管理不当引起的一种行为异常。",
+    "name": "鐗涘紓椋熺櫀",
+    "alias": "寮傞鐥?,
+    "description": "鐗涘紓椋熺櫀鏄敱浜庤惀鍏荤己涔忔垨绠＄悊涓嶅綋寮曡捣鐨勪竴绉嶈涓哄紓甯搞€?,
     "severity": "low",
     "is_contagious": false,
-    "incubation_period": "数天",
-    "mortality_rate": "低"
+    "incubation_period": "鏁板ぉ",
+    "mortality_rate": "浣?
   },
   {
     "id": "d36",
-    "name": "牛蹄叶炎",
-    "alias": "蹄病",
-    "description": "牛蹄叶炎是由于多种因素引起的一种蹄部疾病。",
+    "name": "鐗涜箘鍙剁値",
+    "alias": "韫勭梾",
+    "description": "鐗涜箘鍙剁値鏄敱浜庡绉嶅洜绱犲紩璧风殑涓€绉嶈箘閮ㄧ柧鐥呫€?,
     "severity": "medium",
     "is_contagious": false,
-    "incubation_period": "数天",
-    "mortality_rate": "低"
+    "incubation_period": "鏁板ぉ",
+    "mortality_rate": "浣?
   },
   {
     "id": "d37",
-    "name": "牛腐蹄病",
-    "alias": "蹄叉腐烂",
-    "description": "牛腐蹄病是由于细菌感染引起的一种蹄部疾病。",
+    "name": "鐗涜厫韫勭梾",
+    "alias": "韫勫弶鑵愮儌",
+    "description": "鐗涜厫韫勭梾鏄敱浜庣粏鑿屾劅鏌撳紩璧风殑涓€绉嶈箘閮ㄧ柧鐥呫€?,
     "severity": "medium",
     "is_contagious": false,
-    "incubation_period": "数天",
-    "mortality_rate": "低"
+    "incubation_period": "鏁板ぉ",
+    "mortality_rate": "浣?
   },
   {
     "id": "d38",
-    "name": "牛感冒",
-    "alias": "上呼吸道感染",
-    "description": "牛感冒是由于受寒引起的一种上呼吸道疾病。",
+    "name": "鐗涙劅鍐?,
+    "alias": "涓婂懠鍚搁亾鎰熸煋",
+    "description": "鐗涙劅鍐掓槸鐢变簬鍙楀瘨寮曡捣鐨勪竴绉嶄笂鍛煎惛閬撶柧鐥呫€?,
     "severity": "low",
     "is_contagious": false,
-    "incubation_period": "1-3天",
-    "mortality_rate": "低"
+    "incubation_period": "1-3澶?,
+    "mortality_rate": "浣?
   },
   {
     "id": "d39",
-    "name": "牛肺炎",
-    "alias": "支气管肺炎",
-    "description": "牛肺炎是由于细菌或病毒感染引起的一种呼吸道疾病。",
+    "name": "鐗涜偤鐐?,
+    "alias": "鏀皵绠¤偤鐐?,
+    "description": "鐗涜偤鐐庢槸鐢变簬缁嗚弻鎴栫梾姣掓劅鏌撳紩璧风殑涓€绉嶅懠鍚搁亾鐤剧梾銆?,
     "severity": "medium",
     "is_contagious": false,
-    "incubation_period": "3-7天",
-    "mortality_rate": "较高"
+    "incubation_period": "3-7澶?,
+    "mortality_rate": "杈冮珮"
   },
   {
     "id": "d40",
-    "name": "牛中暑",
-    "alias": "热射病",
-    "description": "牛中暑是由于环境温度过高引起的一种急性热应激疾病。",
+    "name": "鐗涗腑鏆?,
+    "alias": "鐑皠鐥?,
+    "description": "鐗涗腑鏆戞槸鐢变簬鐜娓╁害杩囬珮寮曡捣鐨勪竴绉嶆€ユ€х儹搴旀縺鐤剧梾銆?,
     "severity": "high",
     "is_contagious": false,
-    "incubation_period": "数分钟至数小时",
-    "mortality_rate": "较高"
+    "incubation_period": "鏁板垎閽熻嚦鏁板皬鏃?,
+    "mortality_rate": "杈冮珮"
   }
 ],
   
   symptoms: [
   {
     "id": "s01",
-    "name": "高烧40℃以上",
+    "name": "楂樼儳40鈩冧互涓?,
     "category": "temperature"
   },
   {
     "id": "s02",
-    "name": "低烧38.5-40℃",
+    "name": "浣庣儳38.5-40鈩?,
     "category": "temperature"
   },
   {
     "id": "s03",
-    "name": "体温正常",
+    "name": "浣撴俯姝ｅ父",
     "category": "temperature"
   },
   {
     "id": "s04",
-    "name": "精神沉郁",
+    "name": "绮剧娌夐儊",
     "category": "general"
   },
   {
     "id": "s05",
-    "name": "食欲废绝",
+    "name": "椋熸搴熺粷",
     "category": "general"
   },
   {
     "id": "s06",
-    "name": "食欲减退",
+    "name": "椋熸鍑忛€€",
     "category": "general"
   },
   {
     "id": "s07",
-    "name": "腹泻",
+    "name": "鑵规郴",
     "category": "digestive"
   },
   {
     "id": "s08",
-    "name": "水样腹泻",
+    "name": "姘存牱鑵规郴",
     "category": "digestive"
   },
   {
     "id": "s09",
-    "name": "血便",
+    "name": "琛€渚?,
     "category": "digestive"
   },
   {
     "id": "s10",
-    "name": "呕吐",
+    "name": "鍛曞悙",
     "category": "digestive"
   },
   {
     "id": "s11",
-    "name": "咳嗽",
+    "name": "鍜冲椊",
     "category": "respiratory"
   },
   {
     "id": "s12",
-    "name": "喘气",
+    "name": "鍠樻皵",
     "category": "respiratory"
   },
   {
     "id": "s13",
-    "name": "流鼻涕",
+    "name": "娴侀蓟娑?,
     "category": "respiratory"
   },
   {
     "id": "s14",
-    "name": "打喷嚏",
+    "name": "鎵撳柗鍤?,
     "category": "respiratory"
   },
   {
     "id": "s15",
-    "name": "皮肤发红",
+    "name": "鐨偆鍙戠孩",
     "category": "skin"
   },
   {
     "id": "s16",
-    "name": "皮肤丘疹",
+    "name": "鐨偆涓樼柟",
     "category": "skin"
   },
   {
     "id": "s17",
-    "name": "皮肤溃烂",
+    "name": "鐨偆婧冪儌",
     "category": "skin"
   },
   {
     "id": "s18",
-    "name": "耳朵发紫",
+    "name": "鑰虫湹鍙戠传",
     "category": "skin"
   },
   {
     "id": "s19",
-    "name": "关节肿大",
+    "name": "鍏宠妭鑲垮ぇ",
     "category": "locomotor"
   },
   {
     "id": "s20",
-    "name": "跛行",
+    "name": "璺涜",
     "category": "locomotor"
   },
   {
     "id": "s21",
-    "name": "站立困难",
+    "name": "绔欑珛鍥伴毦",
     "category": "locomotor"
   },
   {
     "id": "s22",
-    "name": "抽搐",
+    "name": "鎶芥悙",
     "category": "neurological"
   },
   {
     "id": "s23",
-    "name": "转圈运动",
+    "name": "杞湀杩愬姩",
     "category": "neurological"
   },
   {
     "id": "s24",
-    "name": "角弓反张",
+    "name": "瑙掑紦鍙嶅紶",
     "category": "neurological"
   },
   {
     "id": "s25",
-    "name": "眼结膜充血",
+    "name": "鐪肩粨鑶滃厖琛€",
     "category": "eye"
   },
   {
     "id": "s26",
-    "name": "眼屎增多",
+    "name": "鐪煎睅澧炲",
     "category": "eye"
   },
   {
     "id": "s27",
-    "name": "流涎",
+    "name": "娴佹稁",
     "category": "general"
   },
   {
     "id": "s28",
-    "name": "便秘",
+    "name": "渚跨",
     "category": "digestive"
   },
   {
     "id": "s29",
-    "name": "消瘦",
+    "name": "娑堢槮",
     "category": "general"
   },
   {
     "id": "s30",
-    "name": "被毛粗乱",
+    "name": "琚瘺绮椾贡",
     "category": "skin"
   },
   {
     "id": "s31",
-    "name": "贫血苍白",
+    "name": "璐鑻嶇櫧",
     "category": "general"
   },
   {
     "id": "s32",
-    "name": "黄疸",
+    "name": "榛勭柛",
     "category": "skin"
   },
   {
     "id": "s33",
-    "name": "流产",
+    "name": "娴佷骇",
     "category": "reproductive"
   },
   {
     "id": "s34",
-    "name": "死胎",
+    "name": "姝昏儙",
     "category": "reproductive"
   },
   {
     "id": "s35",
-    "name": "乳房肿胀",
+    "name": "涔虫埧鑲胯儉",
     "category": "reproductive"
   },
   {
     "id": "s36",
-    "name": "子宫炎",
+    "name": "瀛愬鐐?,
     "category": "reproductive"
   },
   {
     "id": "s37",
-    "name": "无乳",
+    "name": "鏃犱钩",
     "category": "reproductive"
   },
   {
     "id": "s38",
-    "name": "神经症状",
+    "name": "绁炵粡鐥囩姸",
     "category": "neurological"
   },
   {
     "id": "s39",
-    "name": "共济失调",
+    "name": "鍏辨祹澶辫皟",
     "category": "neurological"
   },
   {
     "id": "s40",
-    "name": "瘫痪",
+    "name": "鐦棯",
     "category": "locomotor"
   },
   {
     "id": "s41",
-    "name": "皮肤结痂",
+    "name": "鐨偆缁撶梻",
     "category": "skin"
   },
   {
     "id": "s42",
-    "name": "脱毛",
+    "name": "鑴辨瘺",
     "category": "skin"
   },
   {
     "id": "s43",
-    "name": "骚痒",
+    "name": "楠氱棐",
     "category": "skin"
   },
   {
     "id": "s44",
-    "name": "呼吸困难",
+    "name": "鍛煎惛鍥伴毦",
     "category": "respiratory"
   },
   {
     "id": "s45",
-    "name": "眼分泌物增多",
+    "name": "鐪煎垎娉岀墿澧炲",
     "category": "eye"
   },
   {
     "id": "s46",
-    "name": "口腔溃疡",
+    "name": "鍙ｈ厰婧冪枴",
     "category": "digestive"
   },
   {
     "id": "s47",
-    "name": "蹄部溃疡",
+    "name": "韫勯儴婧冪枴",
     "category": "locomotor"
   },
   {
     "id": "s48",
-    "name": "乳房硬结",
+    "name": "涔虫埧纭粨",
     "category": "reproductive"
   },
   {
     "id": "s49",
-    "name": "恶臭分泌物",
+    "name": "鎭惰嚟鍒嗘硨鐗?,
     "category": "reproductive"
   },
   {
     "id": "s50",
-    "name": "瘤胃臌气",
+    "name": "鐦よ儍鑷屾皵",
     "category": "digestive"
   },
   {
     "id": "s51",
-    "name": "瘤胃蠕动减弱",
+    "name": "鐦よ儍锠曞姩鍑忓急",
     "category": "digestive"
   },
   {
     "id": "s52",
-    "name": "磨牙",
+    "name": "纾ㄧ墮",
     "category": "neurological"
   },
   {
     "id": "s53",
-    "name": "呻吟",
+    "name": "鍛诲悷",
     "category": "general"
   },
   {
     "id": "s54",
-    "name": "弓背",
+    "name": "寮撹儗",
     "category": "locomotor"
   },
   {
     "id": "s55",
-    "name": "努责",
+    "name": "鍔矗",
     "category": "reproductive"
   },
   {
     "id": "s56",
-    "name": "突然死亡",
+    "name": "绐佺劧姝讳骸",
     "category": "general"
   }
 ],
@@ -689,493 +689,493 @@ const data = {
   medications: [
   {
     "id": "m01",
-    "name": "青霉素钾/钠",
-    "type": "抗生素",
-    "dosage": "4-6万单位/kg体重",
-    "route": "注射"
+    "name": "闈掗湁绱犻捑/閽?,
+    "type": "鎶楃敓绱?,
+    "dosage": "4-6涓囧崟浣?kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m02",
-    "name": "链霉素",
-    "type": "抗生素",
-    "dosage": "10-15mg/kg体重",
-    "route": "注射"
+    "name": "閾鹃湁绱?,
+    "type": "鎶楃敓绱?,
+    "dosage": "10-15mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m03",
-    "name": "恩诺沙星",
-    "type": "抗生素",
-    "dosage": "2.5-5mg/kg体重",
-    "route": "注射"
+    "name": "鎭╄娌欐槦",
+    "type": "鎶楃敓绱?,
+    "dosage": "2.5-5mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m04",
-    "name": "氟苯尼考",
-    "type": "抗生素",
-    "dosage": "20mg/kg体重",
-    "route": "注射"
+    "name": "姘熻嫰灏艰€?,
+    "type": "鎶楃敓绱?,
+    "dosage": "20mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m05",
-    "name": "头孢噻呋",
-    "type": "抗生素",
-    "dosage": "3-5mg/kg体重",
-    "route": "注射"
+    "name": "澶村鍣诲憢",
+    "type": "鎶楃敓绱?,
+    "dosage": "3-5mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m06",
-    "name": "阿莫西林",
-    "type": "抗生素",
-    "dosage": "10-20mg/kg体重",
-    "route": "注射/口服"
+    "name": "闃胯帿瑗挎灄",
+    "type": "鎶楃敓绱?,
+    "dosage": "10-20mg/kg浣撻噸",
+    "route": "娉ㄥ皠/鍙ｆ湇"
   },
   {
     "id": "m07",
-    "name": "硫酸庆大霉素",
-    "type": "抗生素",
-    "dosage": "4-8mg/kg体重",
-    "route": "注射/口服"
+    "name": "纭吀搴嗗ぇ闇夌礌",
+    "type": "鎶楃敓绱?,
+    "dosage": "4-8mg/kg浣撻噸",
+    "route": "娉ㄥ皠/鍙ｆ湇"
   },
   {
     "id": "m08",
-    "name": "安乃近",
-    "type": "退烧药",
-    "dosage": "0.1-0.2ml/kg体重",
-    "route": "注射"
+    "name": "瀹変箖杩?,
+    "type": "閫€鐑ц嵂",
+    "dosage": "0.1-0.2ml/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m09",
-    "name": "氟尼辛葡甲胺",
-    "type": "退烧药",
-    "dosage": "2mg/kg体重",
-    "route": "注射"
+    "name": "姘熷凹杈涜憽鐢茶兒",
+    "type": "閫€鐑ц嵂",
+    "dosage": "2mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m10",
-    "name": "地塞米松",
-    "type": "激素",
-    "dosage": "0.1-0.2mg/kg体重",
-    "route": "注射"
+    "name": "鍦板绫虫澗",
+    "type": "婵€绱?,
+    "dosage": "0.1-0.2mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m11",
-    "name": "双黄连注射液",
-    "type": "中药",
-    "dosage": "0.2-0.3ml/kg体重",
-    "route": "注射"
+    "name": "鍙岄粍杩炴敞灏勬恫",
+    "type": "涓嵂",
+    "dosage": "0.2-0.3ml/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m12",
-    "name": "板蓝根注射液",
-    "type": "中药",
-    "dosage": "0.2ml/kg体重",
-    "route": "注射"
+    "name": "鏉胯摑鏍规敞灏勬恫",
+    "type": "涓嵂",
+    "dosage": "0.2ml/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m13",
-    "name": "穿心莲注射液",
-    "type": "中药",
-    "dosage": "0.1-0.2ml/kg体重",
-    "route": "注射"
+    "name": "绌垮績鑾叉敞灏勬恫",
+    "type": "涓嵂",
+    "dosage": "0.1-0.2ml/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m14",
-    "name": "蒙脱石散",
-    "type": "止泻药",
-    "dosage": "犊牛1-2g/头",
-    "route": "口服"
+    "name": "钂欒劚鐭虫暎",
+    "type": "姝㈡郴鑽?,
+    "dosage": "鐘婄墰1-2g/澶?,
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m15",
-    "name": "口服补液盐",
-    "type": "补液",
-    "dosage": "自由饮用",
-    "route": "口服"
+    "name": "鍙ｆ湇琛ユ恫鐩?,
+    "type": "琛ユ恫",
+    "dosage": "鑷敱楗敤",
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m16",
-    "name": "维生素C",
-    "type": "维生素",
-    "dosage": "10-20mg/kg体重",
-    "route": "注射"
+    "name": "缁寸敓绱燙",
+    "type": "缁寸敓绱?,
+    "dosage": "10-20mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m17",
-    "name": "维生素B12",
-    "type": "维生素",
-    "dosage": "0.1-0.3mg/头",
-    "route": "注射"
+    "name": "缁寸敓绱燘12",
+    "type": "缁寸敓绱?,
+    "dosage": "0.1-0.3mg/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m18",
-    "name": "右旋糖酐铁",
-    "type": "补铁",
-    "dosage": "100-200mg/头",
-    "route": "注射"
+    "name": "鍙虫棆绯栭厫閾?,
+    "type": "琛ラ搧",
+    "dosage": "100-200mg/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m19",
-    "name": "阿维菌素",
-    "type": "驱虫药",
-    "dosage": "0.2mg/kg体重",
-    "route": "注射"
+    "name": "闃跨淮鑿岀礌",
+    "type": "椹辫櫕鑽?,
+    "dosage": "0.2mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m20",
-    "name": "伊维菌素",
-    "type": "驱虫药",
-    "dosage": "0.2mg/kg体重",
-    "route": "注射"
+    "name": "浼婄淮鑿岀礌",
+    "type": "椹辫櫕鑽?,
+    "dosage": "0.2mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m21",
-    "name": "双甲脒",
-    "type": "驱虫药",
-    "dosage": "0.025-0.05%溶液",
-    "route": "外用"
+    "name": "鍙岀敳鑴?,
+    "type": "椹辫櫕鑽?,
+    "dosage": "0.025-0.05%婧舵恫",
+    "route": "澶栫敤"
   },
   {
     "id": "m22",
-    "name": "维生素AD注射液",
-    "type": "维生素",
-    "dosage": "2-4ml/头",
-    "route": "注射"
+    "name": "缁寸敓绱燗D娉ㄥ皠娑?,
+    "type": "缁寸敓绱?,
+    "dosage": "2-4ml/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m23",
-    "name": "亚硒酸钠维生素E",
-    "type": "微量元素",
-    "dosage": "2-4ml/头",
-    "route": "注射"
+    "name": "浜氱閰搁挔缁寸敓绱燛",
+    "type": "寰噺鍏冪礌",
+    "dosage": "2-4ml/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m24",
-    "name": "葡萄糖",
-    "type": "营养",
-    "dosage": "10-20ml/kg体重",
-    "route": "注射"
+    "name": "钁¤悇绯?,
+    "type": "钀ュ吇",
+    "dosage": "10-20ml/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m25",
-    "name": "硫酸镁",
-    "type": "泻药",
-    "dosage": "200-400g/头",
-    "route": "口服"
+    "name": "纭吀闀?,
+    "type": "娉昏嵂",
+    "dosage": "200-400g/澶?,
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m26",
-    "name": "西咪替丁",
-    "type": "胃药",
-    "dosage": "5-10mg/kg体重",
-    "route": "注射"
+    "name": "瑗垮挭鏇夸竵",
+    "type": "鑳冭嵂",
+    "dosage": "5-10mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m27",
-    "name": "维生素K3",
-    "type": "维生素",
-    "dosage": "1-2mg/kg体重",
-    "route": "注射"
+    "name": "缁寸敓绱燢3",
+    "type": "缁寸敓绱?,
+    "dosage": "1-2mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m28",
-    "name": "生物素",
-    "type": "维生素",
-    "dosage": "0.1-0.2mg/头",
-    "route": "口服"
+    "name": "鐢熺墿绱?,
+    "type": "缁寸敓绱?,
+    "dosage": "0.1-0.2mg/澶?,
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m29",
-    "name": "复合维生素B",
-    "type": "维生素",
-    "dosage": "2-4ml/头",
-    "route": "注射"
+    "name": "澶嶅悎缁寸敓绱燘",
+    "type": "缁寸敓绱?,
+    "dosage": "2-4ml/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m30",
-    "name": "碘酊",
-    "type": "消毒药",
-    "dosage": "适量",
-    "route": "外用"
+    "name": "纰橀厞",
+    "type": "娑堟瘨鑽?,
+    "dosage": "閫傞噺",
+    "route": "澶栫敤"
   },
   {
     "id": "m31",
-    "name": "黄芪多糖",
-    "type": "中药",
-    "dosage": "0.2ml/kg体重",
-    "route": "注射"
+    "name": "榛勮姫澶氱硸",
+    "type": "涓嵂",
+    "dosage": "0.2ml/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m32",
-    "name": "口蹄疫高免血清",
-    "type": "生物制品",
-    "dosage": "1-2ml/kg体重",
-    "route": "注射"
+    "name": "鍙ｈ箘鐤珮鍏嶈娓?,
+    "type": "鐢熺墿鍒跺搧",
+    "dosage": "1-2ml/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m33",
-    "name": "替米考星",
-    "type": "抗生素",
-    "dosage": "10mg/kg体重",
-    "route": "注射"
+    "name": "鏇跨背鑰冩槦",
+    "type": "鎶楃敓绱?,
+    "dosage": "10mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m34",
-    "name": "干扰素",
-    "type": "生物制品",
-    "dosage": "2ml/头",
-    "route": "注射"
+    "name": "骞叉壈绱?,
+    "type": "鐢熺墿鍒跺搧",
+    "dosage": "2ml/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m35",
-    "name": "杨树花口服液",
-    "type": "中药",
-    "dosage": "5-10ml/头",
-    "route": "口服"
+    "name": "鏉ㄦ爲鑺卞彛鏈嶆恫",
+    "type": "涓嵂",
+    "dosage": "5-10ml/澶?,
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m36",
-    "name": "硫酸粘杆菌素",
-    "type": "抗生素",
-    "dosage": "5mg/kg体重",
-    "route": "口服"
+    "name": "纭吀绮樻潌鑿岀礌",
+    "type": "鎶楃敓绱?,
+    "dosage": "5mg/kg浣撻噸",
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m37",
-    "name": "乙酰甲喹",
-    "type": "抗生素",
-    "dosage": "5mg/kg体重",
-    "route": "注射"
+    "name": "涔欓叞鐢插柟",
+    "type": "鎶楃敓绱?,
+    "dosage": "5mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m38",
-    "name": "泰妙菌素",
-    "type": "抗生素",
-    "dosage": "拌料",
-    "route": "拌料"
+    "name": "娉板鑿岀礌",
+    "type": "鎶楃敓绱?,
+    "dosage": "鎷屾枡",
+    "route": "鎷屾枡"
   },
   {
     "id": "m39",
-    "name": "多西环素",
-    "type": "抗生素",
-    "dosage": "拌料",
-    "route": "拌料"
+    "name": "澶氳タ鐜礌",
+    "type": "鎶楃敓绱?,
+    "dosage": "鎷屾枡",
+    "route": "鎷屾枡"
   },
   {
     "id": "m40",
-    "name": "地美硝唑",
-    "type": "抗原虫药",
-    "dosage": "拌料",
-    "route": "拌料"
+    "name": "鍦扮編纭濆攽",
+    "type": "鎶楀師铏嵂",
+    "dosage": "鎷屾枡",
+    "route": "鎷屾枡"
   },
   {
     "id": "m41",
-    "name": "三氮脒",
-    "type": "抗原虫药",
-    "dosage": "5mg/kg体重",
-    "route": "注射"
+    "name": "涓夋爱鑴?,
+    "type": "鎶楀師铏嵂",
+    "dosage": "5mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m42",
-    "name": "磺胺间甲氧嘧啶",
-    "type": "抗生素",
-    "dosage": "0.1ml/kg体重",
-    "route": "注射"
+    "name": "纾鸿兒闂寸敳姘у槯鍟?,
+    "type": "鎶楃敓绱?,
+    "dosage": "0.1ml/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m43",
-    "name": "阿苯达唑",
-    "type": "驱虫药",
-    "dosage": "5-10mg/kg体重",
-    "route": "口服"
+    "name": "闃胯嫰杈惧攽",
+    "type": "椹辫櫕鑽?,
+    "dosage": "5-10mg/kg浣撻噸",
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m44",
-    "name": "鱼肝油",
-    "type": "维生素",
-    "dosage": "10-20ml/头",
-    "route": "口服"
+    "name": "楸艰倽娌?,
+    "type": "缁寸敓绱?,
+    "dosage": "10-20ml/澶?,
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m45",
-    "name": "甘露醇",
-    "type": "脱水药",
-    "dosage": "1-2g/kg体重",
-    "route": "静脉注射"
+    "name": "鐢橀湶閱?,
+    "type": "鑴辨按鑽?,
+    "dosage": "1-2g/kg浣撻噸",
+    "route": "闈欒剦娉ㄥ皠"
   },
   {
     "id": "m46",
-    "name": "人工盐",
-    "type": "健胃药",
-    "dosage": "200-400g/头",
-    "route": "口服"
+    "name": "浜哄伐鐩?,
+    "type": "鍋ヨ儍鑽?,
+    "dosage": "200-400g/澶?,
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m47",
-    "name": "碳酸氢钠",
-    "type": "制酸药",
-    "dosage": "20-50g/头",
-    "route": "口服"
+    "name": "纰抽吀姘㈤挔",
+    "type": "鍒堕吀鑽?,
+    "dosage": "20-50g/澶?,
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m48",
-    "name": "鱼石脂软膏",
-    "type": "外用药",
-    "dosage": "适量",
-    "route": "外用"
+    "name": "楸肩煶鑴傝蒋鑶?,
+    "type": "澶栫敤鑽?,
+    "dosage": "閫傞噺",
+    "route": "澶栫敤"
   },
   {
     "id": "m49",
-    "name": "宫炎清",
-    "type": "消毒药",
+    "name": "瀹値娓?,
+    "type": "娑堟瘨鑽?,
     "dosage": "200ml",
-    "route": "子宫灌注"
+    "route": "瀛愬鐏屾敞"
   },
   {
     "id": "m50",
-    "name": "氯丙嗪",
-    "type": "镇静药",
-    "dosage": "1-2mg/kg体重",
-    "route": "注射"
+    "name": "姘笝鍡?,
+    "type": "闀囬潤鑽?,
+    "dosage": "1-2mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m51",
-    "name": "高锰酸钾",
-    "type": "消毒药",
-    "dosage": "0.1%溶液",
-    "route": "外用"
+    "name": "楂橀敯閰搁捑",
+    "type": "娑堟瘨鑽?,
+    "dosage": "0.1%婧舵恫",
+    "route": "澶栫敤"
   },
   {
     "id": "m52",
-    "name": "氨苄西林",
-    "type": "抗生素",
-    "dosage": "10-20mg/kg体重",
-    "route": "注射/口服"
+    "name": "姘ㄨ媱瑗挎灄",
+    "type": "鎶楃敓绱?,
+    "dosage": "10-20mg/kg浣撻噸",
+    "route": "娉ㄥ皠/鍙ｆ湇"
   },
   {
     "id": "m53",
-    "name": "头孢喹肟",
-    "type": "抗生素",
-    "dosage": "2-3mg/kg体重",
-    "route": "注射"
+    "name": "澶村鍠硅偀",
+    "type": "鎶楃敓绱?,
+    "dosage": "2-3mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m54",
-    "name": "泰乐菌素",
-    "type": "抗生素",
-    "dosage": "5-10mg/kg体重",
-    "route": "注射"
+    "name": "娉颁箰鑿岀礌",
+    "type": "鎶楃敓绱?,
+    "dosage": "5-10mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m55",
-    "name": "林可霉素",
-    "type": "抗生素",
-    "dosage": "10mg/kg体重",
-    "route": "注射"
+    "name": "鏋楀彲闇夌礌",
+    "type": "鎶楃敓绱?,
+    "dosage": "10mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m56",
-    "name": "缩宫素",
-    "type": "激素",
-    "dosage": "20-50单位/头",
-    "route": "注射"
+    "name": "缂╁绱?,
+    "type": "婵€绱?,
+    "dosage": "20-50鍗曚綅/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m57",
-    "name": "氯前列烯醇",
-    "type": "激素",
-    "dosage": "0.2-0.4mg/头",
-    "route": "注射"
+    "name": "姘墠鍒楃儻閱?,
+    "type": "婵€绱?,
+    "dosage": "0.2-0.4mg/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m58",
-    "name": "苯甲酸雌二醇",
-    "type": "激素",
-    "dosage": "2-4mg/头",
-    "route": "注射"
+    "name": "鑻敳閰搁泴浜岄唶",
+    "type": "婵€绱?,
+    "dosage": "2-4mg/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m59",
-    "name": "黄体酮",
-    "type": "激素",
-    "dosage": "50-100mg/头",
-    "route": "注射"
+    "name": "榛勪綋閰?,
+    "type": "婵€绱?,
+    "dosage": "50-100mg/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m60",
-    "name": "止血敏",
-    "type": "止血药",
-    "dosage": "4-8ml/头",
-    "route": "注射"
+    "name": "姝㈣鏁?,
+    "type": "姝㈣鑽?,
+    "dosage": "4-8ml/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m61",
-    "name": "益母生化散",
-    "type": "中药",
-    "dosage": "拌料",
-    "route": "拌料"
+    "name": "鐩婃瘝鐢熷寲鏁?,
+    "type": "涓嵂",
+    "dosage": "鎷屾枡",
+    "route": "鎷屾枡"
   },
   {
     "id": "m62",
-    "name": "过硫酸氢钾",
-    "type": "消毒药",
-    "dosage": "1:200稀释",
-    "route": "外用"
+    "name": "杩囩～閰告阿閽?,
+    "type": "娑堟瘨鑽?,
+    "dosage": "1:200绋€閲?,
+    "route": "澶栫敤"
   },
   {
     "id": "m63",
-    "name": "戊二醛",
-    "type": "消毒药",
-    "dosage": "1:200-1:500稀释",
-    "route": "外用"
+    "name": "鎴婁簩閱?,
+    "type": "娑堟瘨鑽?,
+    "dosage": "1:200-1:500绋€閲?,
+    "route": "澶栫敤"
   },
   {
     "id": "m64",
-    "name": "聚维酮碘",
-    "type": "消毒药",
-    "dosage": "1:500稀释",
-    "route": "外用"
+    "name": "鑱氱淮閰",
+    "type": "娑堟瘨鑽?,
+    "dosage": "1:500绋€閲?,
+    "route": "澶栫敤"
   },
   {
     "id": "m65",
-    "name": "电解多维",
-    "type": "营养补充",
-    "dosage": "拌料/饮水",
-    "route": "拌料/饮水"
+    "name": "鐢佃В澶氱淮",
+    "type": "钀ュ吇琛ュ厖",
+    "dosage": "鎷屾枡/楗按",
+    "route": "鎷屾枡/楗按"
   },
   {
     "id": "m66",
-    "name": "阿托品",
-    "type": "解毒药",
-    "dosage": "0.01-0.02mg/kg体重",
-    "route": "注射"
+    "name": "闃挎墭鍝?,
+    "type": "瑙ｆ瘨鑽?,
+    "dosage": "0.01-0.02mg/kg浣撻噸",
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m67",
-    "name": "硫酸镁",
-    "type": "泻药",
-    "dosage": "200-400g/头",
-    "route": "口服"
+    "name": "纭吀闀?,
+    "type": "娉昏嵂",
+    "dosage": "200-400g/澶?,
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m68",
-    "name": "液体石蜡",
-    "type": "泻药",
-    "dosage": "500-1000ml/头",
-    "route": "口服"
+    "name": "娑蹭綋鐭宠湣",
+    "type": "娉昏嵂",
+    "dosage": "500-1000ml/澶?,
+    "route": "鍙ｆ湇"
   },
   {
     "id": "m69",
-    "name": "氯化钙",
-    "type": "补钙药",
-    "dosage": "5-10g/头",
-    "route": "注射"
+    "name": "姘寲閽?,
+    "type": "琛ラ挋鑽?,
+    "dosage": "5-10g/澶?,
+    "route": "娉ㄥ皠"
   },
   {
     "id": "m70",
-    "name": "葡萄糖酸钙",
-    "type": "补钙药",
-    "dosage": "10-20g/头",
-    "route": "注射"
+    "name": "钁¤悇绯栭吀閽?,
+    "type": "琛ラ挋鑽?,
+    "dosage": "10-20g/澶?,
+    "route": "娉ㄥ皠"
   }
 ]
 }
@@ -1184,1184 +1184,1182 @@ const data = {
   {
     "id": "t01",
     "disease_id": "d01",
-    "disease_name": "牛口蹄疫",
+    "disease_name": "鐗涘彛韫勭柅",
     "treatment_plans": [
       {
-        "plan_name": "方案一：抗感染+对症治疗",
+        "plan_name": "鏂规涓€锛氭姉鎰熸煋+瀵圭棁娌荤枟",
         "medications": [
           {
             "medication_id": "m05",
-            "medication_name": "头孢噻呋",
+            "medication_name": "澶村鍣诲憢",
             "dosage_per_kg": "5mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "控制继发感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎺у埗缁у彂鎰熸煋"
           },
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "退烧镇痛"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "閫€鐑ч晣鐥?
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "板青颗粒",
-            "dosage": "100g拌料200斤",
-            "frequency": "持续",
+            "medication_name": "鏉块潚棰楃矑",
+            "dosage": "100g鎷屾枡200鏂?,
+            "frequency": "鎸佺画",
             "duration_days": 7,
-            "notes": "清热解毒"
+            "notes": "娓呯儹瑙ｆ瘨"
           }
         ],
-        "notes": "口腔用0.1%高锰酸钾冲洗，蹄部用碘甘油涂抹。"
+        "notes": "鍙ｈ厰鐢?.1%楂橀敯閰搁捑鍐叉礂锛岃箘閮ㄧ敤纰樼敇娌规秱鎶广€?
       }
     ],
-    "nursing_care": "保持圈舍干燥清洁，提供软质饲料和清洁饮水。",
+    "nursing_care": "淇濇寔鍦堣垗骞茬嚗娓呮磥锛屾彁渚涜蒋璐ㄩゲ鏂欏拰娓呮磥楗按銆?,
     "priority": 1
   },
   {
     "id": "t02",
     "disease_id": "d02",
-    "disease_name": "牛结核病",
+    "disease_name": "鐗涚粨鏍哥梾",
     "treatment_plans": [
       {
-        "plan_name": "方案一：无特效治疗",
+        "plan_name": "鏂规涓€锛氭棤鐗规晥娌荤枟",
         "medications": [],
         "oral_medications": [],
-        "notes": "结核病无特效治疗，发现后立即上报，扑杀无害化处理。"
+        "notes": "缁撴牳鐥呮棤鐗规晥娌荤枟锛屽彂鐜板悗绔嬪嵆涓婃姤锛屾墤鏉€鏃犲鍖栧鐞嗐€?
       }
     ],
-    "nursing_care": "严格隔离，等待官方处理。",
+    "nursing_care": "涓ユ牸闅旂锛岀瓑寰呭畼鏂瑰鐞嗐€?,
     "priority": 1
   },
   {
     "id": "t03",
     "disease_id": "d03",
-    "disease_name": "牛布氏杆菌病",
+    "disease_name": "鐗涘竷姘忔潌鑿岀梾",
     "treatment_plans": [
       {
-        "plan_name": "方案一：无特效治疗",
+        "plan_name": "鏂规涓€锛氭棤鐗规晥娌荤枟",
         "medications": [],
         "oral_medications": [],
-        "notes": "布氏杆菌病无特效治疗，发现后立即上报，扑杀无害化处理。"
+        "notes": "甯冩皬鏉嗚弻鐥呮棤鐗规晥娌荤枟锛屽彂鐜板悗绔嬪嵆涓婃姤锛屾墤鏉€鏃犲鍖栧鐞嗐€?
       }
     ],
-    "nursing_care": "严格隔离，等待官方处理。",
+    "nursing_care": "涓ユ牸闅旂锛岀瓑寰呭畼鏂瑰鐞嗐€?,
     "priority": 1
   },
   {
     "id": "t04",
     "disease_id": "d04",
-    "disease_name": "牛肺疫",
+    "disease_name": "鐗涜偤鐤?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：泰乐菌素+氟尼辛",
+        "plan_name": "鏂规涓€锛氭嘲涔愯弻绱?姘熷凹杈?,
         "medications": [
           {
             "medication_id": "m54",
-            "medication_name": "泰乐菌素",
+            "medication_name": "娉颁箰鑿岀礌",
             "dosage_per_kg": "10mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "控制支原体感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎺у埗鏀師浣撴劅鏌?
           },
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "退烧抗炎"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "閫€鐑ф姉鐐?
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "麻杏石甘散",
-            "dosage": "100g拌料200斤",
-            "frequency": "持续",
+            "medication_name": "楹绘潖鐭崇敇鏁?,
+            "dosage": "100g鎷屾枡200鏂?,
+            "frequency": "鎸佺画",
             "duration_days": 7,
-            "notes": "止咳平喘"
+            "notes": "姝㈠挸骞冲枠"
           }
         ],
-        "notes": "泰乐菌素对支原体效果好。"
+        "notes": "娉颁箰鑿岀礌瀵规敮鍘熶綋鏁堟灉濂姐€?
       }
     ],
-    "nursing_care": "改善通风，降低饲养密度。",
+    "nursing_care": "鏀瑰杽閫氶锛岄檷浣庨ゲ鍏诲瘑搴︺€?,
     "priority": 1
   },
   {
     "id": "t05",
     "disease_id": "d05",
-    "disease_name": "牛流行热",
+    "disease_name": "鐗涙祦琛岀儹",
     "treatment_plans": [
       {
-        "plan_name": "方案一：对症治疗",
+        "plan_name": "鏂规涓€锛氬鐥囨不鐤?,
         "medications": [
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "退烧镇痛"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "閫€鐑ч晣鐥?
           },
           {
             "medication_id": "m16",
-            "medication_name": "维生素C",
+            "medication_name": "缁寸敓绱燙",
             "dosage_per_kg": "20mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "抗应激"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎶楀簲婵€"
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "板蓝根颗粒",
-            "dosage": "100g拌料200斤",
-            "frequency": "持续",
+            "medication_name": "鏉胯摑鏍归绮?,
+            "dosage": "100g鎷屾枡200鏂?,
+            "frequency": "鎸佺画",
             "duration_days": 5,
-            "notes": "清热解毒"
+            "notes": "娓呯儹瑙ｆ瘨"
           }
         ],
-        "notes": "流行热无特效药，以对症治疗为主。"
+        "notes": "娴佽鐑棤鐗规晥鑽紝浠ュ鐥囨不鐤椾负涓汇€?
       }
     ],
-    "nursing_care": "保持圈舍清洁，提供优质饮水。",
+    "nursing_care": "淇濇寔鍦堣垗娓呮磥锛屾彁渚涗紭璐ㄩギ姘淬€?,
     "priority": 2
   },
   {
     "id": "t06",
     "disease_id": "d06",
-    "disease_name": "牛病毒性腹泻",
+    "disease_name": "鐗涚梾姣掓€ц吂娉?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：对症治疗",
+        "plan_name": "鏂规涓€锛氬鐥囨不鐤?,
         "medications": [
           {
             "medication_id": "m05",
-            "medication_name": "头孢噻呋",
+            "medication_name": "澶村鍣诲憢",
             "dosage_per_kg": "5mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "控制继发感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎺у埗缁у彂鎰熸煋"
           },
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "退烧"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "閫€鐑?
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "蒙脱石散",
-            "dosage": "犊牛3-5g/头",
-            "frequency": "每日2次",
+            "medication_name": "钂欒劚鐭虫暎",
+            "dosage": "鐘婄墰3-5g/澶?,
+            "frequency": "姣忔棩2娆?,
             "duration_days": 3,
-            "notes": "止泻保护肠道"
+            "notes": "姝㈡郴淇濇姢鑲犻亾"
           },
           {
-            "medication_name": "口服补液盐",
-            "dosage": "自由饮用",
-            "frequency": "持续",
+            "medication_name": "鍙ｆ湇琛ユ恫鐩?,
+            "dosage": "鑷敱楗敤",
+            "frequency": "鎸佺画",
             "duration_days": 5,
-            "notes": "防止脱水"
+            "notes": "闃叉鑴辨按"
           }
         ],
-        "notes": "BVD无特效药，以对症治疗为主。"
+        "notes": "BVD鏃犵壒鏁堣嵂锛屼互瀵圭棁娌荤枟涓轰富銆?
       }
     ],
-    "nursing_care": "隔离病牛，提供优质饲料。",
+    "nursing_care": "闅旂鐥呯墰锛屾彁渚涗紭璐ㄩゲ鏂欍€?,
     "priority": 2
   },
   {
     "id": "t07",
     "disease_id": "d07",
-    "disease_name": "牛传染性鼻气管炎",
+    "disease_name": "鐗涗紶鏌撴€ч蓟姘旂鐐?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：对症治疗",
+        "plan_name": "鏂规涓€锛氬鐥囨不鐤?,
         "medications": [
           {
             "medication_id": "m05",
-            "medication_name": "头孢噻呋",
+            "medication_name": "澶村鍣诲憢",
             "dosage_per_kg": "5mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "控制继发感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎺у埗缁у彂鎰熸煋"
           },
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "退烧"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "閫€鐑?
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "板蓝根颗粒",
-            "dosage": "100g拌料200斤",
-            "frequency": "持续",
+            "medication_name": "鏉胯摑鏍归绮?,
+            "dosage": "100g鎷屾枡200鏂?,
+            "frequency": "鎸佺画",
             "duration_days": 7,
-            "notes": "清热解毒"
+            "notes": "娓呯儹瑙ｆ瘨"
           }
         ],
-        "notes": "IBR无特效药，以对症治疗为主。"
+        "notes": "IBR鏃犵壒鏁堣嵂锛屼互瀵圭棁娌荤枟涓轰富銆?
       }
     ],
-    "nursing_care": "隔离病牛，改善通风。",
+    "nursing_care": "闅旂鐥呯墰锛屾敼鍠勯€氶銆?,
     "priority": 2
   },
   {
     "id": "t08",
     "disease_id": "d08",
-    "disease_name": "牛巴氏杆菌病",
+    "disease_name": "鐗涘反姘忔潌鑿岀梾",
     "treatment_plans": [
       {
-        "plan_name": "方案一：头孢+氟尼辛",
+        "plan_name": "鏂规涓€锛氬ご瀛?姘熷凹杈?,
         "medications": [
           {
             "medication_id": "m05",
-            "medication_name": "头孢噻呋",
+            "medication_name": "澶村鍣诲憢",
             "dosage_per_kg": "5mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "控制感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎺у埗鎰熸煋"
           },
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "退烧抗炎"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "閫€鐑ф姉鐐?
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "氟苯尼考粉",
-            "dosage": "100g拌料200斤",
-            "frequency": "持续",
+            "medication_name": "姘熻嫰灏艰€冪矇",
+            "dosage": "100g鎷屾枡200鏂?,
+            "frequency": "鎸佺画",
             "duration_days": 7,
-            "notes": "控制感染"
+            "notes": "鎺у埗鎰熸煋"
           }
         ],
-        "notes": "头孢+氟尼辛注射，配合氟苯尼考拌料。"
+        "notes": "澶村+姘熷凹杈涙敞灏勶紝閰嶅悎姘熻嫰灏艰€冩媽鏂欍€?
       }
     ],
-    "nursing_care": "改善通风，降低饲养密度。",
+    "nursing_care": "鏀瑰杽閫氶锛岄檷浣庨ゲ鍏诲瘑搴︺€?,
     "priority": 1
   },
   {
     "id": "t09",
     "disease_id": "d09",
-    "disease_name": "犊牛大肠杆菌病",
+    "disease_name": "鐘婄墰澶ц偁鏉嗚弻鐥?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：庆大霉素+蒙脱石",
+        "plan_name": "鏂规涓€锛氬簡澶ч湁绱?钂欒劚鐭?,
         "medications": [
           {
             "medication_id": "m07",
-            "medication_name": "硫酸庆大霉素",
-            "dosage_per_kg": "2-3ml/头",
-            "frequency": "每日2次",
+            "medication_name": "纭吀搴嗗ぇ闇夌礌",
+            "dosage_per_kg": "2-3ml/澶?,
+            "frequency": "姣忔棩2娆?,
             "duration_days": 3,
-            "route": "口服",
-            "notes": "口服，肠道杀菌"
+            "route": "鍙ｆ湇",
+            "notes": "鍙ｆ湇锛岃偁閬撴潃鑿?
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "蒙脱石散",
-            "dosage": "犊牛1-2g/头",
-            "frequency": "每日2次",
+            "medication_name": "钂欒劚鐭虫暎",
+            "dosage": "鐘婄墰1-2g/澶?,
+            "frequency": "姣忔棩2娆?,
             "duration_days": 3,
-            "notes": "止泻保护肠道"
+            "notes": "姝㈡郴淇濇姢鑲犻亾"
           },
           {
-            "medication_name": "口服补液盐",
-            "dosage": "自由饮用",
-            "frequency": "持续",
+            "medication_name": "鍙ｆ湇琛ユ恫鐩?,
+            "dosage": "鑷敱楗敤",
+            "frequency": "鎸佺画",
             "duration_days": 5,
-            "notes": "防止脱水"
+            "notes": "闃叉鑴辨按"
           }
         ],
-        "notes": "犊牛口服庆大霉素+蒙脱石+补液盐。"
+        "notes": "鐘婄墰鍙ｆ湇搴嗗ぇ闇夌礌+钂欒劚鐭?琛ユ恫鐩愩€?
       }
     ],
-    "nursing_care": "保温，保持干燥，及时清除粪便。",
+    "nursing_care": "淇濇俯锛屼繚鎸佸共鐕ワ紝鍙婃椂娓呴櫎绮究銆?,
     "priority": 1
   },
   {
     "id": "t10",
     "disease_id": "d10",
-    "disease_name": "牛副结核病",
+    "disease_name": "鐗涘壇缁撴牳鐥?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：无特效治疗",
+        "plan_name": "鏂规涓€锛氭棤鐗规晥娌荤枟",
         "medications": [],
         "oral_medications": [],
-        "notes": "副结核病无特效治疗，发现后立即上报，扑杀无害化处理。"
+        "notes": "鍓粨鏍哥梾鏃犵壒鏁堟不鐤楋紝鍙戠幇鍚庣珛鍗充笂鎶ワ紝鎵戞潃鏃犲鍖栧鐞嗐€?
       }
     ],
-    "nursing_care": "严格隔离，等待官方处理。",
+    "nursing_care": "涓ユ牸闅旂锛岀瓑寰呭畼鏂瑰鐞嗐€?,
     "priority": 1
   },
   {
     "id": "t11",
     "disease_id": "d11",
-    "disease_name": "牛炭疽",
+    "disease_name": "鐗涚偔鐤?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：无特效治疗",
+        "plan_name": "鏂规涓€锛氭棤鐗规晥娌荤枟",
         "medications": [],
         "oral_medications": [],
-        "notes": "炭疽无特效治疗，发现后立即上报，扑杀无害化处理。严禁解剖。"
+        "notes": "鐐柦鏃犵壒鏁堟不鐤楋紝鍙戠幇鍚庣珛鍗充笂鎶ワ紝鎵戞潃鏃犲鍖栧鐞嗐€備弗绂佽В鍓栥€?
       }
     ],
-    "nursing_care": "严格隔离，等待官方处理。严禁解剖。",
+    "nursing_care": "涓ユ牸闅旂锛岀瓑寰呭畼鏂瑰鐞嗐€備弗绂佽В鍓栥€?,
     "priority": 1
   },
   {
     "id": "t12",
     "disease_id": "d12",
-    "disease_name": "牛气肿疽",
+    "disease_name": "鐗涙皵鑲跨柦",
     "treatment_plans": [
       {
-        "plan_name": "方案一：青霉素+氟尼辛",
+        "plan_name": "鏂规涓€锛氶潚闇夌礌+姘熷凹杈?,
         "medications": [
           {
             "medication_id": "m01",
-            "medication_name": "青霉素钾/钠",
-            "dosage_per_kg": "6-8万单位",
-            "frequency": "每日2-3次",
+            "medication_name": "闈掗湁绱犻捑/閽?,
+            "dosage_per_kg": "6-8涓囧崟浣?,
+            "frequency": "姣忔棩2-3娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "首选药物"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "棣栭€夎嵂鐗?
           },
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "退烧镇痛"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "閫€鐑ч晣鐥?
           }
         ],
         "oral_medications": [],
-        "notes": "青霉素是首选药物，早期治疗效果好。"
+        "notes": "闈掗湁绱犳槸棣栭€夎嵂鐗╋紝鏃╂湡娌荤枟鏁堟灉濂姐€?
       }
     ],
-    "nursing_care": "隔离病牛，保持圈舍清洁。",
+    "nursing_care": "闅旂鐥呯墰锛屼繚鎸佸湀鑸嶆竻娲併€?,
     "priority": 1
   },
   {
     "id": "t13",
     "disease_id": "d13",
-    "disease_name": "牛恶性水肿",
+    "disease_name": "鐗涙伓鎬ф按鑲?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：青霉素+清创",
+        "plan_name": "鏂规涓€锛氶潚闇夌礌+娓呭垱",
         "medications": [
           {
             "medication_id": "m01",
-            "medication_name": "青霉素钾/钠",
-            "dosage_per_kg": "6-8万单位",
-            "frequency": "每日2-3次",
+            "medication_name": "闈掗湁绱犻捑/閽?,
+            "dosage_per_kg": "6-8涓囧崟浣?,
+            "frequency": "姣忔棩2-3娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "对厌氧菌效果好"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "瀵瑰帉姘ц弻鏁堟灉濂?
           }
         ],
         "oral_medications": [],
-        "notes": "青霉素注射+双氧水清创。"
+        "notes": "闈掗湁绱犳敞灏?鍙屾哀姘存竻鍒涖€?
       }
     ],
-    "nursing_care": "保持环境干燥，减少外伤。",
+    "nursing_care": "淇濇寔鐜骞茬嚗锛屽噺灏戝浼ゃ€?,
     "priority": 1
   },
   {
     "id": "t14",
     "disease_id": "d14",
-    "disease_name": "牛破伤风",
+    "disease_name": "鐗涚牬浼ら",
     "treatment_plans": [
       {
-        "plan_name": "方案一：破伤风抗毒素+镇静",
+        "plan_name": "鏂规涓€锛氱牬浼ら鎶楁瘨绱?闀囬潤",
         "medications": [
           {
             "medication_id": "m01",
-            "medication_name": "青霉素钾/钠",
-            "dosage_per_kg": "6-8万单位",
-            "frequency": "每日2-3次",
+            "medication_name": "闈掗湁绱犻捑/閽?,
+            "dosage_per_kg": "6-8涓囧崟浣?,
+            "frequency": "姣忔棩2-3娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "预防感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "棰勯槻鎰熸煋"
           },
           {
             "medication_id": "m50",
-            "medication_name": "氯丙嗪",
+            "medication_name": "姘笝鍡?,
             "dosage_per_kg": "1-2mg",
-            "frequency": "每日2次",
+            "frequency": "姣忔棩2娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "镇静"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "闀囬潤"
           }
         ],
         "oral_medications": [],
-        "notes": "破伤风抗毒素+青霉素+镇静。"
+        "notes": "鐮翠激椋庢姉姣掔礌+闈掗湁绱?闀囬潤銆?
       }
     ],
-    "nursing_care": "保持安静环境，避免刺激。",
+    "nursing_care": "淇濇寔瀹夐潤鐜锛岄伩鍏嶅埡婵€銆?,
     "priority": 1
   },
   {
     "id": "t15",
     "disease_id": "d15",
-    "disease_name": "牛狂犬病",
+    "disease_name": "鐗涚媯鐘梾",
     "treatment_plans": [
       {
-        "plan_name": "方案一：无特效治疗",
+        "plan_name": "鏂规涓€锛氭棤鐗规晥娌荤枟",
         "medications": [],
         "oral_medications": [],
-        "notes": "狂犬病无特效治疗，发现后立即上报，扑杀无害化处理。"
+        "notes": "鐙傜姮鐥呮棤鐗规晥娌荤枟锛屽彂鐜板悗绔嬪嵆涓婃姤锛屾墤鏉€鏃犲鍖栧鐞嗐€?
       }
     ],
-    "nursing_care": "严格隔离，等待官方处理。",
+    "nursing_care": "涓ユ牸闅旂锛岀瓑寰呭畼鏂瑰鐞嗐€?,
     "priority": 1
   },
   {
     "id": "t16",
     "disease_id": "d16",
-    "disease_name": "牛传染性角膜结膜炎",
+    "disease_name": "鐗涗紶鏌撴€ц鑶滅粨鑶滅値",
     "treatment_plans": [
       {
-        "plan_name": "方案一：局部治疗",
+        "plan_name": "鏂规涓€锛氬眬閮ㄦ不鐤?,
         "medications": [],
         "oral_medications": [],
-        "notes": "用生理盐水清洗患眼，涂抹抗生素眼膏。"
+        "notes": "鐢ㄧ敓鐞嗙洂姘存竻娲楁偅鐪硷紝娑傛姽鎶楃敓绱犵溂鑶忋€?
       }
     ],
-    "nursing_care": "保持圈舍清洁，避免强光刺激。",
+    "nursing_care": "淇濇寔鍦堣垗娓呮磥锛岄伩鍏嶅己鍏夊埡婵€銆?,
     "priority": 2
   },
   {
     "id": "t17",
     "disease_id": "d17",
-    "disease_name": "牛放线菌病",
+    "disease_name": "鐗涙斁绾胯弻鐥?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：碘化钾+青霉素",
+        "plan_name": "鏂规涓€锛氱鍖栭捑+闈掗湁绱?,
         "medications": [
           {
             "medication_id": "m01",
-            "medication_name": "青霉素钾/钠",
-            "dosage_per_kg": "6-8万单位",
-            "frequency": "每日2-3次",
+            "medication_name": "闈掗湁绱犻捑/閽?,
+            "dosage_per_kg": "6-8涓囧崟浣?,
+            "frequency": "姣忔棩2-3娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "控制感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎺у埗鎰熸煋"
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "碘化钾",
-            "dosage": "5-10g/头",
-            "frequency": "每日1次",
+            "medication_name": "纰樺寲閽?,
+            "dosage": "5-10g/澶?,
+            "frequency": "姣忔棩1娆?,
             "duration_days": 14,
-            "notes": "口服碘化钾"
+            "notes": "鍙ｆ湇纰樺寲閽?
           }
         ],
-        "notes": "青霉素注射+碘化钾口服。"
+        "notes": "闈掗湁绱犳敞灏?纰樺寲閽惧彛鏈嶃€?
       }
     ],
-    "nursing_care": "保持圈舍清洁，减少外伤。",
+    "nursing_care": "淇濇寔鍦堣垗娓呮磥锛屽噺灏戝浼ゃ€?,
     "priority": 2
   },
   {
     "id": "t18",
     "disease_id": "d18",
-    "disease_name": "牛衣原体病",
+    "disease_name": "鐗涜。鍘熶綋鐥?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：四环素类",
+        "plan_name": "鏂规涓€锛氬洓鐜礌绫?,
         "medications": [
           {
             "medication_id": "m39",
-            "medication_name": "多西环素",
-            "dosage_per_kg": "拌料",
-            "frequency": "持续",
+            "medication_name": "澶氳タ鐜礌",
+            "dosage_per_kg": "鎷屾枡",
+            "frequency": "鎸佺画",
             "duration_days": 7,
-            "route": "拌料",
-            "notes": "对衣原体效果好"
+            "route": "鎷屾枡",
+            "notes": "瀵硅。鍘熶綋鏁堟灉濂?
           }
         ],
         "oral_medications": [],
-        "notes": "多西环素对衣原体效果好。"
+        "notes": "澶氳タ鐜礌瀵硅。鍘熶綋鏁堟灉濂姐€?
       }
     ],
-    "nursing_care": "隔离病牛，改善饲养管理。",
+    "nursing_care": "闅旂鐥呯墰锛屾敼鍠勯ゲ鍏荤鐞嗐€?,
     "priority": 2
   },
   {
     "id": "t19",
     "disease_id": "d19",
-    "disease_name": "牛球虫病",
+    "disease_name": "鐗涚悆铏梾",
     "treatment_plans": [
       {
-        "plan_name": "方案一：磺胺类",
+        "plan_name": "鏂规涓€锛氱：鑳虹被",
         "medications": [
           {
             "medication_id": "m42",
-            "medication_name": "磺胺间甲氧嘧啶",
+            "medication_name": "纾鸿兒闂寸敳姘у槯鍟?,
             "dosage_per_kg": "0.1ml",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "对球虫效果好"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "瀵圭悆铏晥鏋滃ソ"
           }
         ],
         "oral_medications": [],
-        "notes": "磺胺间甲氧嘧啶对球虫效果好。"
+        "notes": "纾鸿兒闂寸敳姘у槯鍟跺鐞冭櫕鏁堟灉濂姐€?
       }
     ],
-    "nursing_care": "保持圈舍清洁，及时清除粪便。",
+    "nursing_care": "淇濇寔鍦堣垗娓呮磥锛屽強鏃舵竻闄ょ勃渚裤€?,
     "priority": 2
   },
   {
     "id": "t20",
     "disease_id": "d20",
-    "disease_name": "牛肝片吸虫病",
+    "disease_name": "鐗涜倽鐗囧惛铏梾",
     "treatment_plans": [
       {
-        "plan_name": "方案一：阿苯达唑",
+        "plan_name": "鏂规涓€锛氶樋鑻揪鍞?,
         "medications": [],
         "oral_medications": [
           {
-            "medication_name": "阿苯达唑",
-            "dosage": "5-10mg/kg体重",
-            "frequency": "单次",
+            "medication_name": "闃胯嫰杈惧攽",
+            "dosage": "5-10mg/kg浣撻噸",
+            "frequency": "鍗曟",
             "duration_days": 1,
-            "notes": "广谱驱虫药，对肝片吸虫效果好"
+            "notes": "骞胯氨椹辫櫕鑽紝瀵硅倽鐗囧惛铏晥鏋滃ソ"
           }
         ],
-        "notes": "阿苯达唑口服，单次给药。"
+        "notes": "闃胯嫰杈惧攽鍙ｆ湇锛屽崟娆＄粰鑽€?
       }
     ],
-    "nursing_care": "定期驱虫，避免在低洼潮湿地区放牧。",
+    "nursing_care": "瀹氭湡椹辫櫕锛岄伩鍏嶅湪浣庢醇娼箍鍦板尯鏀剧墽銆?,
     "priority": 2
   },
   {
     "id": "t21",
     "disease_id": "d21",
-    "disease_name": "牛绦虫病",
+    "disease_name": "鐗涚沪铏梾",
     "treatment_plans": [
       {
-        "plan_name": "方案一：阿苯达唑",
+        "plan_name": "鏂规涓€锛氶樋鑻揪鍞?,
         "medications": [],
         "oral_medications": [
           {
-            "medication_name": "阿苯达唑",
-            "dosage": "5-10mg/kg体重",
-            "frequency": "单次",
+            "medication_name": "闃胯嫰杈惧攽",
+            "dosage": "5-10mg/kg浣撻噸",
+            "frequency": "鍗曟",
             "duration_days": 1,
-            "notes": "广谱驱虫药，对绦虫效果好"
+            "notes": "骞胯氨椹辫櫕鑽紝瀵圭沪铏晥鏋滃ソ"
           }
         ],
-        "notes": "阿苯达唑口服，单次给药。"
+        "notes": "闃胯嫰杈惧攽鍙ｆ湇锛屽崟娆＄粰鑽€?
       }
     ],
-    "nursing_care": "定期驱虫，保持环境卫生。",
+    "nursing_care": "瀹氭湡椹辫櫕锛屼繚鎸佺幆澧冨崼鐢熴€?,
     "priority": 3
   },
   {
     "id": "t22",
     "disease_id": "d22",
-    "disease_name": "牛螨病",
+    "disease_name": "鐗涜灗鐥?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：伊维菌素+外用",
+        "plan_name": "鏂规涓€锛氫紛缁磋弻绱?澶栫敤",
         "medications": [
           {
             "medication_id": "m20",
-            "medication_name": "伊维菌素",
+            "medication_name": "浼婄淮鑿岀礌",
             "dosage_per_kg": "0.2mg",
-            "frequency": "间隔7-10天重复",
+            "frequency": "闂撮殧7-10澶╅噸澶?,
             "duration_days": 2,
-            "route": "皮下注射",
-            "notes": "驱螨虫"
+            "route": "鐨笅娉ㄥ皠",
+            "notes": "椹辫灗铏?
           }
         ],
         "oral_medications": [],
-        "notes": "伊维菌素注射+双甲脒外用，间隔7-10天重复一次。"
+        "notes": "浼婄淮鑿岀礌娉ㄥ皠+鍙岀敳鑴掑鐢紝闂撮殧7-10澶╅噸澶嶄竴娆°€?
       }
     ],
-    "nursing_care": "保持圈舍干燥，定期消毒。",
+    "nursing_care": "淇濇寔鍦堣垗骞茬嚗锛屽畾鏈熸秷姣掋€?,
     "priority": 3
   },
   {
     "id": "t23",
     "disease_id": "d23",
-    "disease_name": "牛前胃弛缓",
+    "disease_name": "鐗涘墠鑳冨紱缂?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：健胃+益生菌",
+        "plan_name": "鏂规涓€锛氬仴鑳?鐩婄敓鑿?,
         "medications": [],
         "oral_medications": [
           {
-            "medication_name": "人工盐",
-            "dosage": "200-400g/头",
-            "frequency": "每日1次",
+            "medication_name": "浜哄伐鐩?,
+            "dosage": "200-400g/澶?,
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "notes": "健胃通便"
+            "notes": "鍋ヨ儍閫氫究"
           },
           {
-            "medication_name": "乳酶生",
-            "dosage": "5-10g/头",
-            "frequency": "每日2次",
+            "medication_name": "涔抽叾鐢?,
+            "dosage": "5-10g/澶?,
+            "frequency": "姣忔棩2娆?,
             "duration_days": 5,
-            "notes": "调节肠道菌群"
+            "notes": "璋冭妭鑲犻亾鑿岀兢"
           }
         ],
-        "notes": "人工盐健胃+乳酶生调节菌群。"
+        "notes": "浜哄伐鐩愬仴鑳?涔抽叾鐢熻皟鑺傝弻缇ゃ€?
       }
     ],
-    "nursing_care": "改善饲养管理，提供易消化饲料。",
+    "nursing_care": "鏀瑰杽楗插吇绠＄悊锛屾彁渚涙槗娑堝寲楗叉枡銆?,
     "priority": 3
   },
   {
     "id": "t24",
     "disease_id": "d24",
-    "disease_name": "牛瘤胃臌气",
+    "disease_name": "鐗涚槫鑳冭噷姘?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：紧急排气",
+        "plan_name": "鏂规涓€锛氱揣鎬ユ帓姘?,
         "medications": [],
         "oral_medications": [
           {
-            "medication_name": "二甲硅油",
-            "dosage": "5-10g/头",
-            "frequency": "单次",
+            "medication_name": "浜岀敳纭呮补",
+            "dosage": "5-10g/澶?,
+            "frequency": "鍗曟",
             "duration_days": 1,
-            "notes": "消泡剂"
+            "notes": "娑堟场鍓?
           }
         ],
-        "notes": "紧急穿刺排气，二甲硅油消泡。"
+        "notes": "绱ф€ョ┛鍒烘帓姘旓紝浜岀敳纭呮补娑堟场銆?
       }
     ],
-    "nursing_care": "避免采食易发酵饲料。",
+    "nursing_care": "閬垮厤閲囬鏄撳彂閰甸ゲ鏂欍€?,
     "priority": 1
   },
   {
     "id": "t25",
     "disease_id": "d25",
-    "disease_name": "牛瘤胃酸中毒",
+    "disease_name": "鐗涚槫鑳冮吀涓瘨",
     "treatment_plans": [
       {
-        "plan_name": "方案一：碳酸氢钠+补液",
+        "plan_name": "鏂规涓€锛氱⒊閰告阿閽?琛ユ恫",
         "medications": [
           {
             "medication_id": "m24",
-            "medication_name": "葡萄糖",
+            "medication_name": "钁¤悇绯?,
             "dosage_per_kg": "10-20ml/kg",
-            "frequency": "单次",
+            "frequency": "鍗曟",
             "duration_days": 1,
-            "route": "静脉注射",
-            "notes": "补充能量"
+            "route": "闈欒剦娉ㄥ皠",
+            "notes": "琛ュ厖鑳介噺"
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "碳酸氢钠",
-            "dosage": "20-50g/头",
-            "frequency": "每日2次",
+            "medication_name": "纰抽吀姘㈤挔",
+            "dosage": "20-50g/澶?,
+            "frequency": "姣忔棩2娆?,
             "duration_days": 3,
-            "notes": "中和胃酸"
+            "notes": "涓拰鑳冮吀"
           }
         ],
-        "notes": "碳酸氢钠中和胃酸+葡萄糖补液。"
+        "notes": "纰抽吀姘㈤挔涓拰鑳冮吀+钁¤悇绯栬ˉ娑层€?
       }
     ],
-    "nursing_care": "避免采食过多精料。",
+    "nursing_care": "閬垮厤閲囬杩囧绮炬枡銆?,
     "priority": 1
   },
   {
     "id": "t26",
     "disease_id": "d26",
-    "disease_name": "牛酮病",
+    "disease_name": "鐗涢叜鐥?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：葡萄糖+丙二醇",
+        "plan_name": "鏂规涓€锛氳憽钀勭硸+涓欎簩閱?,
         "medications": [
           {
             "medication_id": "m24",
-            "medication_name": "葡萄糖",
+            "medication_name": "钁¤悇绯?,
             "dosage_per_kg": "10-20ml/kg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "静脉注射",
-            "notes": "补充血糖"
+            "route": "闈欒剦娉ㄥ皠",
+            "notes": "琛ュ厖琛€绯?
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "丙二醇",
-            "dosage": "200-300ml/头",
-            "frequency": "每日1次",
+            "medication_name": "涓欎簩閱?,
+            "dosage": "200-300ml/澶?,
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "notes": "补充能量"
+            "notes": "琛ュ厖鑳介噺"
           }
         ],
-        "notes": "葡萄糖静脉注射+丙二醇口服。"
+        "notes": "钁¤悇绯栭潤鑴夋敞灏?涓欎簩閱囧彛鏈嶃€?
       }
     ],
-    "nursing_care": "调整饲料配方，增加能量摄入。",
+    "nursing_care": "璋冩暣楗叉枡閰嶆柟锛屽鍔犺兘閲忔憚鍏ャ€?,
     "priority": 2
   },
   {
     "id": "t27",
     "disease_id": "d27",
-    "disease_name": "牛生产瘫痪",
+    "disease_name": "鐗涚敓浜х槴鐥?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：补钙",
+        "plan_name": "鏂规涓€锛氳ˉ閽?,
         "medications": [
           {
             "medication_id": "m69",
-            "medication_name": "氯化钙",
-            "dosage_per_kg": "5-10g/头",
-            "frequency": "单次",
+            "medication_name": "姘寲閽?,
+            "dosage_per_kg": "5-10g/澶?,
+            "frequency": "鍗曟",
             "duration_days": 1,
-            "route": "静脉注射",
-            "notes": "补钙"
+            "route": "闈欒剦娉ㄥ皠",
+            "notes": "琛ラ挋"
           }
         ],
         "oral_medications": [],
-        "notes": "氯化钙静脉注射补钙。"
+        "notes": "姘寲閽欓潤鑴夋敞灏勮ˉ閽欍€?
       }
     ],
-    "nursing_care": "产后及时补钙，预防低血钙。",
+    "nursing_care": "浜у悗鍙婃椂琛ラ挋锛岄闃蹭綆琛€閽欍€?,
     "priority": 1
   },
   {
     "id": "t28",
     "disease_id": "d28",
-    "disease_name": "牛子宫内膜炎",
+    "disease_name": "鐗涘瓙瀹唴鑶滅値",
     "treatment_plans": [
       {
-        "plan_name": "方案一：头孢+宫炎净灌注",
+        "plan_name": "鏂规涓€锛氬ご瀛?瀹値鍑€鐏屾敞",
         "medications": [
           {
             "medication_id": "m05",
-            "medication_name": "头孢噻呋",
+            "medication_name": "澶村鍣诲憢",
             "dosage_per_kg": "5mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "控制感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎺у埗鎰熸煋"
           }
         ],
         "oral_medications": [],
-        "notes": "头孢注射，宫炎净子宫灌注。"
+        "notes": "澶村娉ㄥ皠锛屽鐐庡噣瀛愬鐏屾敞銆?
       }
     ],
-    "nursing_care": "做好产房消毒，产后消炎。",
+    "nursing_care": "鍋氬ソ浜ф埧娑堟瘨锛屼骇鍚庢秷鐐庛€?,
     "priority": 2
   },
   {
     "id": "t29",
     "disease_id": "d29",
-    "disease_name": "牛乳房炎",
+    "disease_name": "鐗涗钩鎴跨値",
     "treatment_plans": [
       {
-        "plan_name": "方案一：头孢+鱼石脂外敷",
+        "plan_name": "鏂规涓€锛氬ご瀛?楸肩煶鑴傚鏁?,
         "medications": [
           {
             "medication_id": "m05",
-            "medication_name": "头孢噻呋",
+            "medication_name": "澶村鍣诲憢",
             "dosage_per_kg": "5mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "控制感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎺у埗鎰熸煋"
           },
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "消炎镇痛"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "娑堢値闀囩棝"
           }
         ],
         "oral_medications": [],
-        "notes": "头孢+氟尼辛注射，鱼石脂软膏外敷消炎。"
+        "notes": "澶村+姘熷凹杈涙敞灏勶紝楸肩煶鑴傝蒋鑶忓鏁锋秷鐐庛€?
       }
     ],
-    "nursing_care": "保持牛舍清洁，做好乳房护理。",
+    "nursing_care": "淇濇寔鐗涜垗娓呮磥锛屽仛濂戒钩鎴挎姢鐞嗐€?,
     "priority": 2
   },
   {
     "id": "t30",
     "disease_id": "d30",
-    "disease_name": "牛胎衣不下",
+    "disease_name": "鐗涜儙琛ｄ笉涓?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：缩宫素+抗生素",
+        "plan_name": "鏂规涓€锛氱缉瀹礌+鎶楃敓绱?,
         "medications": [
           {
             "medication_id": "m56",
-            "medication_name": "缩宫素",
-            "dosage_per_kg": "20-50单位/头",
-            "frequency": "每2小时1次，最多3次",
+            "medication_name": "缂╁绱?,
+            "dosage_per_kg": "20-50鍗曚綅/澶?,
+            "frequency": "姣?灏忔椂1娆★紝鏈€澶?娆?,
             "duration_days": 1,
-            "route": "肌肉注射",
-            "notes": "促进子宫收缩，排出胎衣"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "淇冭繘瀛愬鏀剁缉锛屾帓鍑鸿儙琛?
           },
           {
             "medication_id": "m05",
-            "medication_name": "头孢噻呋",
+            "medication_name": "澶村鍣诲憢",
             "dosage_per_kg": "5mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "预防感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "棰勯槻鎰熸煋"
           }
         ],
         "oral_medications": [],
-        "notes": "缩宫素促进子宫收缩排出胎衣，头孢预防感染。"
+        "notes": "缂╁绱犱績杩涘瓙瀹敹缂╂帓鍑鸿儙琛ｏ紝澶村棰勯槻鎰熸煋銆?
       }
     ],
-    "nursing_care": "加强妊娠期饲养管理，避免难产。",
+    "nursing_care": "鍔犲己濡婂鏈熼ゲ鍏荤鐞嗭紝閬垮厤闅句骇銆?,
     "priority": 2
   },
   {
     "id": "t31",
     "disease_id": "d31",
-    "disease_name": "牛难产",
+    "disease_name": "鐗涢毦浜?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：缩宫素助产",
+        "plan_name": "鏂规涓€锛氱缉瀹礌鍔╀骇",
         "medications": [
           {
             "medication_id": "m56",
-            "medication_name": "缩宫素",
-            "dosage_per_kg": "20-50单位/头",
-            "frequency": "每30分钟1次，最多3次",
+            "medication_name": "缂╁绱?,
+            "dosage_per_kg": "20-50鍗曚綅/澶?,
+            "frequency": "姣?0鍒嗛挓1娆★紝鏈€澶?娆?,
             "duration_days": 1,
-            "route": "肌肉注射",
-            "notes": "促进子宫收缩"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "淇冭繘瀛愬鏀剁缉"
           }
         ],
         "oral_medications": [],
-        "notes": "缩宫素助产，无效则人工助产或剖腹产。"
+        "notes": "缂╁绱犲姪浜э紝鏃犳晥鍒欎汉宸ュ姪浜ф垨鍓栬吂浜с€?
       }
     ],
-    "nursing_care": "加强妊娠期饲养管理，避免母牛过肥或过瘦。",
+    "nursing_care": "鍔犲己濡婂鏈熼ゲ鍏荤鐞嗭紝閬垮厤姣嶇墰杩囪偉鎴栬繃鐦︺€?,
     "priority": 1
   },
   {
     "id": "t32",
     "disease_id": "d32",
-    "disease_name": "牛维生素A缺乏症",
+    "disease_name": "鐗涚淮鐢熺礌A缂轰箯鐥?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：维生素AD",
+        "plan_name": "鏂规涓€锛氱淮鐢熺礌AD",
         "medications": [
           {
             "medication_id": "m22",
-            "medication_name": "维生素AD注射液",
-            "dosage_per_kg": "2-4ml/头",
-            "frequency": "单次",
+            "medication_name": "缁寸敓绱燗D娉ㄥ皠娑?,
+            "dosage_per_kg": "2-4ml/澶?,
+            "frequency": "鍗曟",
             "duration_days": 1,
-            "route": "肌肉注射",
-            "notes": "补充维生素A和D"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "琛ュ厖缁寸敓绱燗鍜孌"
           }
         ],
         "oral_medications": [],
-        "notes": "维生素AD注射+鱼肝油口服。"
+        "notes": "缁寸敓绱燗D娉ㄥ皠+楸艰倽娌瑰彛鏈嶃€?
       }
     ],
-    "nursing_care": "补充青绿饲料，改善饲养管理。",
+    "nursing_care": "琛ュ厖闈掔豢楗叉枡锛屾敼鍠勯ゲ鍏荤鐞嗐€?,
     "priority": 3
   },
   {
     "id": "t33",
     "disease_id": "d33",
-    "disease_name": "牛白肌病",
+    "disease_name": "鐗涚櫧鑲岀梾",
     "treatment_plans": [
       {
-        "plan_name": "方案一：亚硒酸钠维生素E",
+        "plan_name": "鏂规涓€锛氫簹纭掗吀閽犵淮鐢熺礌E",
         "medications": [
           {
             "medication_id": "m23",
-            "medication_name": "亚硒酸钠维生素E",
-            "dosage_per_kg": "2-4ml/头",
-            "frequency": "单次",
+            "medication_name": "浜氱閰搁挔缁寸敓绱燛",
+            "dosage_per_kg": "2-4ml/澶?,
+            "frequency": "鍗曟",
             "duration_days": 1,
-            "route": "肌肉注射",
-            "notes": "补硒和维生素E"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "琛ョ鍜岀淮鐢熺礌E"
           }
         ],
         "oral_medications": [],
-        "notes": "亚硒酸钠维生素E注射，饲料中添加亚硒酸钠预防。"
+        "notes": "浜氱閰搁挔缁寸敓绱燛娉ㄥ皠锛岄ゲ鏂欎腑娣诲姞浜氱閰搁挔棰勯槻銆?
       }
     ],
-    "nursing_care": "饲料中添加亚硒酸钠，补充维生素E。",
+    "nursing_care": "楗叉枡涓坊鍔犱簹纭掗吀閽狅紝琛ュ厖缁寸敓绱燛銆?,
     "priority": 3
   },
   {
     "id": "t34",
     "disease_id": "d34",
-    "disease_name": "牛佝偻病",
+    "disease_name": "鐗涗綕鍋荤梾",
     "treatment_plans": [
       {
-        "plan_name": "方案一：补钙+维生素D",
+        "plan_name": "鏂规涓€锛氳ˉ閽?缁寸敓绱燚",
         "medications": [
           {
             "medication_id": "m22",
-            "medication_name": "维生素AD注射液",
-            "dosage_per_kg": "2-4ml/头",
-            "frequency": "单次",
+            "medication_name": "缁寸敓绱燗D娉ㄥ皠娑?,
+            "dosage_per_kg": "2-4ml/澶?,
+            "frequency": "鍗曟",
             "duration_days": 1,
-            "route": "肌肉注射",
-            "notes": "补充维生素D"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "琛ュ厖缁寸敓绱燚"
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "碳酸钙",
-            "dosage": "10-20g/头",
-            "frequency": "每日1次",
+            "medication_name": "纰抽吀閽?,
+            "dosage": "10-20g/澶?,
+            "frequency": "姣忔棩1娆?,
             "duration_days": 14,
-            "notes": "补钙"
+            "notes": "琛ラ挋"
           }
         ],
-        "notes": "维生素D注射+碳酸钙口服。"
+        "notes": "缁寸敓绱燚娉ㄥ皠+纰抽吀閽欏彛鏈嶃€?
       }
     ],
-    "nursing_care": "补充钙磷，增加光照。",
+    "nursing_care": "琛ュ厖閽欑７锛屽鍔犲厜鐓с€?,
     "priority": 3
   },
   {
     "id": "t35",
     "disease_id": "d35",
-    "disease_name": "牛异食癖",
+    "disease_name": "鐗涘紓椋熺櫀",
     "treatment_plans": [
       {
-        "plan_name": "方案一：补充营养",
+        "plan_name": "鏂规涓€锛氳ˉ鍏呰惀鍏?,
         "medications": [],
         "oral_medications": [
           {
-            "medication_name": "电解多维",
-            "dosage": "500g拌料1000斤",
-            "frequency": "持续",
+            "medication_name": "鐢佃В澶氱淮",
+            "dosage": "500g鎷屾枡1000鏂?,
+            "frequency": "鎸佺画",
             "duration_days": 14,
-            "notes": "补充维生素和矿物质"
+            "notes": "琛ュ厖缁寸敓绱犲拰鐭跨墿璐?
           },
           {
-            "medication_name": "微量元素添加剂",
-            "dosage": "按说明使用",
-            "frequency": "持续",
+            "medication_name": "寰噺鍏冪礌娣诲姞鍓?,
+            "dosage": "鎸夎鏄庝娇鐢?,
+            "frequency": "鎸佺画",
             "duration_days": 14,
-            "notes": "补充微量元素"
+            "notes": "琛ュ厖寰噺鍏冪礌"
           }
         ],
-        "notes": "补充营养，改善饲养环境。"
+        "notes": "琛ュ厖钀ュ吇锛屾敼鍠勯ゲ鍏荤幆澧冦€?
       }
     ],
-    "nursing_care": "改善饲养环境，降低饲养密度。",
+    "nursing_care": "鏀瑰杽楗插吇鐜锛岄檷浣庨ゲ鍏诲瘑搴︺€?,
     "priority": 3
   },
   {
     "id": "t36",
     "disease_id": "d36",
-    "disease_name": "牛蹄叶炎",
+    "disease_name": "鐗涜箘鍙剁値",
     "treatment_plans": [
       {
-        "plan_name": "方案一：氟尼辛+修蹄",
+        "plan_name": "鏂规涓€锛氭盁灏艰緵+淇箘",
         "medications": [
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "消炎镇痛"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "娑堢値闀囩棝"
           }
         ],
         "oral_medications": [],
-        "notes": "氟尼辛消炎镇痛+修蹄。"
+        "notes": "姘熷凹杈涙秷鐐庨晣鐥?淇箘銆?
       }
     ],
-    "nursing_care": "保持地面干燥，定期修蹄。",
+    "nursing_care": "淇濇寔鍦伴潰骞茬嚗锛屽畾鏈熶慨韫勩€?,
     "priority": 2
   },
   {
     "id": "t37",
     "disease_id": "d37",
-    "disease_name": "牛腐蹄病",
+    "disease_name": "鐗涜厫韫勭梾",
     "treatment_plans": [
       {
-        "plan_name": "方案一：清创+抗生素",
+        "plan_name": "鏂规涓€锛氭竻鍒?鎶楃敓绱?,
         "medications": [
           {
             "medication_id": "m01",
-            "medication_name": "青霉素钾/钠",
-            "dosage_per_kg": "6-8万单位",
-            "frequency": "每日2次",
+            "medication_name": "闈掗湁绱犻捑/閽?,
+            "dosage_per_kg": "6-8涓囧崟浣?,
+            "frequency": "姣忔棩2娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "控制感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎺у埗鎰熸煋"
           }
         ],
         "oral_medications": [],
-        "notes": "清创+青霉素注射。"
+        "notes": "娓呭垱+闈掗湁绱犳敞灏勩€?
       }
     ],
-    "nursing_care": "保持地面干燥，定期修蹄。",
+    "nursing_care": "淇濇寔鍦伴潰骞茬嚗锛屽畾鏈熶慨韫勩€?,
     "priority": 2
   },
   {
     "id": "t38",
     "disease_id": "d38",
-    "disease_name": "牛感冒",
+    "disease_name": "鐗涙劅鍐?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：对症治疗",
+        "plan_name": "鏂规涓€锛氬鐥囨不鐤?,
         "medications": [
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "退烧"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "閫€鐑?
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "板蓝根颗粒",
-            "dosage": "100g拌料200斤",
-            "frequency": "持续",
+            "medication_name": "鏉胯摑鏍归绮?,
+            "dosage": "100g鎷屾枡200鏂?,
+            "frequency": "鎸佺画",
             "duration_days": 5,
-            "notes": "清热解毒"
+            "notes": "娓呯儹瑙ｆ瘨"
           }
         ],
-        "notes": "做好保温，减少应激。"
+        "notes": "鍋氬ソ淇濇俯锛屽噺灏戝簲婵€銆?
       }
     ],
-    "nursing_care": "做好保温，减少应激。",
+    "nursing_care": "鍋氬ソ淇濇俯锛屽噺灏戝簲婵€銆?,
     "priority": 3
   },
   {
     "id": "t39",
     "disease_id": "d39",
-    "disease_name": "牛肺炎",
+    "disease_name": "鐗涜偤鐐?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：头孢+氟尼辛",
+        "plan_name": "鏂规涓€锛氬ご瀛?姘熷凹杈?,
         "medications": [
           {
             "medication_id": "m05",
-            "medication_name": "头孢噻呋",
+            "medication_name": "澶村鍣诲憢",
             "dosage_per_kg": "5mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 5,
-            "route": "肌肉注射",
-            "notes": "控制感染"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎺у埗鎰熸煋"
           },
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "每日1次",
+            "frequency": "姣忔棩1娆?,
             "duration_days": 3,
-            "route": "肌肉注射",
-            "notes": "退烧抗炎"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "閫€鐑ф姉鐐?
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "麻杏石甘散",
-            "dosage": "100g拌料200斤",
-            "frequency": "持续",
+            "medication_name": "楹绘潖鐭崇敇鏁?,
+            "dosage": "100g鎷屾枡200鏂?,
+            "frequency": "鎸佺画",
             "duration_days": 7,
-            "notes": "止咳平喘"
+            "notes": "姝㈠挸骞冲枠"
           }
         ],
-        "notes": "头孢+氟尼辛注射，配合麻杏石甘散。"
+        "notes": "澶村+姘熷凹杈涙敞灏勶紝閰嶅悎楹绘潖鐭崇敇鏁ｃ€?
       }
     ],
-    "nursing_care": "改善通风，降低饲养密度。",
+    "nursing_care": "鏀瑰杽閫氶锛岄檷浣庨ゲ鍏诲瘑搴︺€?,
     "priority": 2
   },
   {
     "id": "t40",
     "disease_id": "d40",
-    "disease_name": "牛中暑",
+    "disease_name": "鐗涗腑鏆?,
     "treatment_plans": [
       {
-        "plan_name": "方案一：紧急降温",
+        "plan_name": "鏂规涓€锛氱揣鎬ラ檷娓?,
         "medications": [
           {
             "medication_id": "m09",
-            "medication_name": "氟尼辛葡甲胺",
+            "medication_name": "姘熷凹杈涜憽鐢茶兒",
             "dosage_per_kg": "2mg",
-            "frequency": "单次",
+            "frequency": "鍗曟",
             "duration_days": 1,
-            "route": "肌肉注射",
-            "notes": "退烧"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "閫€鐑?
           },
           {
             "medication_id": "m16",
-            "medication_name": "维生素C",
+            "medication_name": "缁寸敓绱燙",
             "dosage_per_kg": "20mg",
-            "frequency": "单次",
+            "frequency": "鍗曟",
             "duration_days": 1,
-            "route": "肌肉注射",
-            "notes": "抗应激"
+            "route": "鑲岃倝娉ㄥ皠",
+            "notes": "鎶楀簲婵€"
           }
         ],
         "oral_medications": [
           {
-            "medication_name": "口服补液盐",
-            "dosage": "自由饮用",
-            "frequency": "持续",
+            "medication_name": "鍙ｆ湇琛ユ恫鐩?,
+            "dosage": "鑷敱楗敤",
+            "frequency": "鎸佺画",
             "duration_days": 3,
-            "notes": "补充水分和电解质"
+            "notes": "琛ュ厖姘村垎鍜岀數瑙ｈ川"
           }
         ],
-        "notes": "立即将牛转移到阴凉处，用冷水浇头和全身。"
+        "notes": "绔嬪嵆灏嗙墰杞Щ鍒伴槾鍑夊锛岀敤鍐锋按娴囧ご鍜屽叏韬€?
       }
     ],
-    "nursing_care": "立即将牛转移到阴凉处，用冷水浇头和全身。",
+    "nursing_care": "绔嬪嵆灏嗙墰杞Щ鍒伴槾鍑夊锛岀敤鍐锋按娴囧ご鍜屽叏韬€?,
     "priority": 1
   }
-],
-
-  diseaseSymptoms: [
+],\n\n  diseaseSymptoms: [
   {
     "disease_id": "d01",
     "symptom_id": "s01"
